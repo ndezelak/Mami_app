@@ -1,12 +1,15 @@
+// Use gradle plugin to compile this module as an
+// android project.
 apply plugin: 'com.android.application'
 
 android {
     signingConfigs {
         Signing {
-            keyAlias 'MamiAppAndroidKey'
-            keyPassword 'nerdrek1'
-            storeFile file('C:/Users/Nejc/AndroidStudioProjects/MamiApp2/KeyStore/Key.jks')
+            storeFile file('C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\KeyStore\\Key.jks')
             storePassword 'nerdrek1'
+            keyAlias 'MamiAppAndroidKey'
+            keyPassword 'nerdek1'
+
         }
     }
     compileSdkVersion 23
@@ -18,11 +21,19 @@ android {
         versionCode 1
         versionName "1.0"
     }
+    // Here you can define multiple build types
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //signingConfig signingConfigs.Signing
+            manifestPlaceholders = [appName: "MamiApp"]
             signingConfig signingConfigs.Signing
+        }
+        debug {
+            applicationIdSuffix '.debug'
+            versionNameSuffix '-DEBUG'
+            manifestPlaceholders = [appName: "MamiApp-TEST"]
         }
     }
 }

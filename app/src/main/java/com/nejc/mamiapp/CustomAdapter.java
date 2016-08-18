@@ -21,6 +21,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -41,17 +42,18 @@ public class CustomAdapter extends BaseAdapter{
     ArrayList<String> list;
     int length;
     int Position;
+    boolean side;
 
 
 
 
-
-    public CustomAdapter(Context context,ArrayList<String> list) {
+    public CustomAdapter(Context context,ArrayList<String> list, boolean side) {
         super();
         this.context=context;
         this.list=list;
         SharedPreferences preferences=context.getSharedPreferences("Constants", context.MODE_PRIVATE);
         length=preferences.getInt("length",0);
+        this.side=side;
         Position=0;
 
     }
@@ -64,12 +66,17 @@ public class CustomAdapter extends BaseAdapter{
     public int getCount() {
         SharedPreferences preferences=context.getSharedPreferences("Constants", context.MODE_PRIVATE);
         length=preferences.getInt("length",0);
-        return length;
+       if(side){
+           return length-16;
+       }
+        else{
+           return 16;
+       }
     }
 
 
 
-
+    // Not important
     @Override
     public Object getItem(int position) {
         return null;
@@ -92,6 +99,11 @@ public class CustomAdapter extends BaseAdapter{
 // The most important Callback. Here the Adapter returns a View that has to be displayed on the current row.
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+        if(side){
+            position=position+16;
+        }
+
+
         //Open the database
         SQLiteDatabase sqLiteDatabase=context.openOrCreateDatabase("Workdays", context.MODE_PRIVATE, null);
 
@@ -145,9 +157,110 @@ public class CustomAdapter extends BaseAdapter{
         //Retrieve Views in a Listview row (note you are using View v that you inflated from an .XML that
         // contains more primitive Views.
         TextView dan=(TextView)v.findViewById(R.id.Day);
-        TextView datum=(TextView) v.findViewById(R.id.Date);
+        //TextView datum=(TextView) v.findViewById(R.id.Date);
         TextView type=(TextView) v.findViewById(R.id.Type);
+        ImageView number = (ImageView) v.findViewById(R.id.number);
+        ImageView background_type = (ImageView) v.findViewById(R.id.background_type);
+        switch (position + 1){
+            case 1:
+                number.setImageResource(R.drawable.one);
+                break;
+            case 2:
+                number.setImageResource(R.drawable.two);
+                break;
+            case 3:
+                number.setImageResource(R.drawable.three);
+                break;
+            case 4:
+                number.setImageResource(R.drawable.four);
+                break;
+            case 5:
+                number.setImageResource(R.drawable.five);
+                break;
+            case 6:
+                number.setImageResource(R.drawable.six);
+                break;
+            case 7:
+                number.setImageResource(R.drawable.seven);
+                break;
+            case 8:
+                number.setImageResource(R.drawable.eight);
+                break;
+            case 9:
+                number.setImageResource(R.drawable.nine);
+                break;
+            case 10:
+                number.setImageResource(R.drawable.ten);
+                break;
+            case 11:
+                number.setImageResource(R.drawable.eleven);
+                break;
+            case 12:
+                number.setImageResource(R.drawable.twelve);
+                break;
+            case 13:
+                number.setImageResource(R.drawable.thirteen);
+                break;
+            case 14:
+                number.setImageResource(R.drawable.fourteen);
+                break;
+            case 15:
+                number.setImageResource(R.drawable.fifteen);
+                break;
+            case 16:
+                number.setImageResource(R.drawable.sixteen);
+                break;
+            case 17:
+                number.setImageResource(R.drawable.seventeen);
+                break;
+            case 18:
+                number.setImageResource(R.drawable.eightteen);
+                break;
+            case 19:
+                number.setImageResource(R.drawable.nineteen);
+                break;
+            case 20:
+                number.setImageResource(R.drawable.twenty);
+                break;
+            case 21:
+                number.setImageResource(R.drawable.twentyone);
+                break;
+            case 22:
+                number.setImageResource(R.drawable.twentytwo);
+                break;
+            case 23:
+                number.setImageResource(R.drawable.twentythree);
+                break;
+            case 24:
+                number.setImageResource(R.drawable.twentyfour);
+                break;
+            case 25:
+                number.setImageResource(R.drawable.twentyfive);
+                break;
+            case 26:
+                number.setImageResource(R.drawable.twentysix);
+                break;
+            case 27:
+                number.setImageResource(R.drawable.twentyseven);
+                break;
+            case 28:
+                number.setImageResource(R.drawable.twentyeight);
+                break;
+            case 29:
+                number.setImageResource(R.drawable.twentynine);
+                break;
+            case 30:
+                number.setImageResource(R.drawable.thirty);
+                break;
+            case 31:
+                number.setImageResource(R.drawable.thirtyone);
+                break;
+            default:
+                number.setImageResource(R.drawable.eight);
+                break;
 
+
+        }
 
         //***********Fill those views with data***************************************************//
         // Here you should do the following:
@@ -173,13 +286,13 @@ public class CustomAdapter extends BaseAdapter{
 
             if (cursor.getCount() != 0) {
                 //TO DO: Cursor could be set even before the Query!
-                datum.setText(Integer.toString(cursor.getInt(0)) + "." + Integer.toString(cursor.getInt(1)) + "." + Integer.toString(cursor.getInt(2)));
+               // datum.setText(Integer.toString(cursor.getInt(0)) + "." + Integer.toString(cursor.getInt(1)) + "." + Integer.toString(cursor.getInt(2)));
 
 
                 // Set type that you've read from the Database
                 switch (cursor.getInt(3)) {
                     case 0:
-                        type.setText("Prazno");
+                        type.setText("");
                         break;
 
                     case 1:
@@ -204,8 +317,14 @@ public class CustomAdapter extends BaseAdapter{
                 }
 
             }
+
         // If the day is Sunday make it red.
-        if(day==7) dan.setTextColor(Color.RED);
+        if(day==7) {
+        background_type.setImageResource(R.drawable.elemnt_rdec);
+        }
+        else{
+            background_type.setImageResource(R.drawable.element_bel);
+        }
 
 
         // Close the cursor.

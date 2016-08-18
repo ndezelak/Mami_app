@@ -23,7 +23,9 @@ import android.widget.Button;
  * 5/6/2016:
  *         + Comments and revision history template
  *
- *
+ * 18/08/2016:
+ *          + Changed logo
+ *          - commented some debugging stuff regarding database handling
  *
  /***********************************************/
 
@@ -49,6 +51,9 @@ public class MainActivity extends AppCompatActivity {
   // 4->Kuhinja popoldan
   // 5->Prosto
   // 6->Dopust
+
+
+ /*
   //Read through the database using a Cursor. Select everything from the Database
   Cursor cursor=sqLiteDatabase.rawQuery("SELECT * FROM workdays",null);
   int array=0;
@@ -68,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
    }while( cursor.moveToNext() );
   }
 
+*/
 
   Button weekButton=(Button)findViewById(R.id.Button_week);
   Button monthButton=(Button)findViewById(R.id.Button_month);

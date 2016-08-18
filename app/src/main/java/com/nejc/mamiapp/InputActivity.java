@@ -49,7 +49,8 @@ public class InputActivity extends AppCompatActivity {
     SharedPreferences pref;
 
     // Define all the Widgets from the .XML
-    ListView listview = null;
+    ListView listview_right = null;
+    ListView listview_left = null;
     TextView text = null;
     Spinner spinnerDay = null;
     Spinner spinnerMonth = null;
@@ -141,7 +142,8 @@ public class InputActivity extends AppCompatActivity {
         pref = context.getSharedPreferences("Constants", context.MODE_PRIVATE);
 
         // All GUI objects
-        listview = (ListView) findViewById(R.id.listView);
+        listview_left = (ListView) findViewById(R.id.listView);
+        listview_right = (ListView) findViewById(R.id.listView_right);
         text = (TextView) findViewById(R.id.TextDay);
         spinnerDay = (Spinner) findViewById(R.id.spinner_day);
         spinnerMonth = (Spinner) findViewById(R.id.spinner_month);
@@ -184,23 +186,26 @@ public class InputActivity extends AppCompatActivity {
         //**************Listview Adapter initialization ********************//
         ArrayList<String> arrayList = new ArrayList<String>();
 
-        arrayList.add("Ponedeljek");
-        arrayList.add("Torek");
-        arrayList.add("Sreda");
-        arrayList.add("Četrtek");
-        arrayList.add("Petek");
-        arrayList.add("Sobota");
-        arrayList.add("Nedelja");
+        arrayList.add("P");
+        arrayList.add("T");
+        arrayList.add("S");
+        arrayList.add("Č");
+        arrayList.add("P");
+        arrayList.add("S");
+        arrayList.add("N");
 
 
         // Here you use your special Adapter that extends BaseAdapter for populating the Listview
         // Inside a Callback method you read out of the Database and populate all the rows with correct data.
         // But you needed to downcast it to BaseAdapter as the Listview expects an Adapter like that.
-        final BaseAdapter adapter = new CustomAdapter(this, arrayList);
-        listview.setAdapter(adapter);
+        final BaseAdapter adapter_left = new CustomAdapter(this, arrayList, false);
+        listview_left.setAdapter(adapter_left);
+
+        BaseAdapter adapter_right = new CustomAdapter(this, arrayList, true);
+        listview_right.setAdapter(adapter_right);
 
         // Save this adapter to the adapterContainer
-        adapterContainer = new AdapterContainer(adapter);
+        adapterContainer = new AdapterContainer(adapter_left);
 
         //*********************Month Spinner Initialization********************************************************//
         // Spinner onItem selected listener. It is used to save current month to the preference file
@@ -238,7 +243,7 @@ public class InputActivity extends AppCompatActivity {
                 }
 
                 // Everytime a new month in the spinner is selected, redraw Listview.
-                adapter.notifyDataSetChanged();
+                adapter_left.notifyDataSetChanged();
 
             }
 
@@ -258,7 +263,7 @@ public class InputActivity extends AppCompatActivity {
 
 
         //*********** ListView initialization ************************************************//
-        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listview_left.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -329,7 +334,7 @@ public class InputActivity extends AppCompatActivity {
                 sqLiteDatabase.execSQL("UPDATE workdays SET type=" + Integer.toString(position) + " WHERE day=" + Integer.toString(Day) + " AND month=" + Integer.toString(Month) + " AND year=" + Integer.toString(Year));
 
                 // Notify the Listview Adapter for a redraw.
-                adapter.notifyDataSetChanged();
+                adapter_left.notifyDataSetChanged();
             }
 
             @Override
@@ -352,7 +357,7 @@ public class InputActivity extends AppCompatActivity {
                 DataBaseHelper.setBackDatabase(month, year, context.openOrCreateDatabase("Workdays", context.MODE_PRIVATE, null), "workdays");
 
                 ListView listView = (ListView) findViewById(R.id.listView);
-                adapter.notifyDataSetChanged();
+                adapter_left.notifyDataSetChanged();
             }
         });
 

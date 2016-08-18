@@ -1,41 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.nejc.mamiapp.WeekActivity">
+    android:gravity="bottom|fill_vertical"
+    tools:context="com.nejc.mamiapp.WeekActivity"
+    android:background="@drawable/back">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <FrameLayout
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_month"
+            android:layout_weight="0.1"
+            android:scrollIndicators="left"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1">
-
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/spinner_month"
-                android:layout_weight="1"
-                android:scrollIndicators="left"
-                android:layout_marginTop="20dp"/>
 
             <ListView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/listView"
                 android:layout_weight="1"
-                android:layout_marginTop="150dp"
-                android:layout_marginBottom="10dp"/>
-
-        </FrameLayout>
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                />
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/listView_right"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                />
+        </LinearLayout>
 
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="3"
+            android:layout_weight="5"
             android:transitionGroup="false">
 
             <TextView
@@ -55,5 +67,9 @@
                 android:layout_marginTop="70dp"/>
 
         </FrameLayout>
+
+
     </LinearLayout>
+
+
 </RelativeLayout>
