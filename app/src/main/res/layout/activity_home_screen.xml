@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/HomeScreen"
+    android:background="@drawable/back">
+   android:background="">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        android:id="@+id/logo"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:id="@+id/Button_week"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/logo"
+        android:textSize="45sp"
+        android:background="@drawable/weekinput"  />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:id="@+id/Button_month"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/Button_week"
+        android:textSize="45sp"
+        android:background="@drawable/overviewmonth"  />
+
+</RelativeLayout>
+
