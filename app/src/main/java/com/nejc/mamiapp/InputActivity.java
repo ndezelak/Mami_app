@@ -15,6 +15,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -49,8 +50,8 @@ public class InputActivity extends AppCompatActivity {
     SharedPreferences pref;
 
     // Define all the Widgets from the .XML
-    ListView listview_right = null;
-    ListView listview_left = null;
+   // ListView listview_right = null;
+    //ListView listview_left = null;
     TextView text = null;
     Spinner spinnerDay = null;
     Spinner spinnerMonth = null;
@@ -132,21 +133,27 @@ public class InputActivity extends AppCompatActivity {
     @Override
     // Initializes all the GUI components
     protected void onCreate(Bundle savedInstanceState) {
-        Log.i("Database", "You are inside on Create");
-        Log.i("Database", "Application context inside onCreate is: " + getApplicationContext().toString());
-
         super.onCreate(savedInstanceState);
+        // Set activity layout
         setContentView(R.layout.activity_week);
 
+        // App context and preference file
         context = getApplicationContext();
         pref = context.getSharedPreferences("Constants", context.MODE_PRIVATE);
 
         // All GUI objects
-        listview_left = (ListView) findViewById(R.id.listView);
-        listview_right = (ListView) findViewById(R.id.listView_right);
+        //listview_left = (ListView) findViewById(R.id.listView);
+        //listview_right = (ListView) findViewById(R.id.listView_right);
         text = (TextView) findViewById(R.id.TextDay);
         spinnerDay = (Spinner) findViewById(R.id.spinner_day);
         spinnerMonth = (Spinner) findViewById(R.id.spinner_month);
+        ViewPager pager = (ViewPager) findViewById(R.id.pager);
+
+
+        // ************ ViewPager initialization *******************//
+
+        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+        pager.setAdapter(adapter);
 
         //startService(intent);
 
@@ -156,7 +163,7 @@ public class InputActivity extends AppCompatActivity {
         if (spinnerDay.getAdapter() == null) {
 
             // Once again you define all the types dynamically
-            // TO DO: Define types statically!
+            // TODO: Define types statically!
             ArrayList<String> listTypes = new ArrayList<String>();
             listTypes.add("Prazno");
             listTypes.add("Šank dopoldan");
@@ -168,12 +175,13 @@ public class InputActivity extends AppCompatActivity {
 
             ArrayAdapter<String> spinnerAdapter = new ArrayAdapter<String>(this, android.R.layout.select_dialog_item, listTypes);
             spinnerDay.setAdapter(spinnerAdapter);
-            Log.i("Spinner Type", Float.toString(spinnerDay.getAlpha()));
+
         }
 
         //*********Spinner Month Adapter Initialization*************************************************//
 
         //Put months into an arrayList
+        // TODO: Use string.xml
         String[] monthsStrings = {"Januar", "Februar", "Marec", "April", "Maj", "Junij", "Julij", "Avgust", "September", "Oktober", "November", "December"};
         List<String> months = new ArrayList<String>(Arrays.asList(monthsStrings));
 
@@ -184,8 +192,9 @@ public class InputActivity extends AppCompatActivity {
 
 
         //**************Listview Adapter initialization ********************//
+/*
         ArrayList<String> arrayList = new ArrayList<String>();
-
+        // TODO: Use string.xml
         arrayList.add("P");
         arrayList.add("T");
         arrayList.add("S");
@@ -206,7 +215,7 @@ public class InputActivity extends AppCompatActivity {
 
         // Save this adapter to the adapterContainer
         adapterContainer = new AdapterContainer(adapter_left);
-
+*/
         //*********************Month Spinner Initialization********************************************************//
         // Spinner onItem selected listener. It is used to save current month to the preference file
         // and determine size of the listview (using a lookup table)
@@ -243,7 +252,7 @@ public class InputActivity extends AppCompatActivity {
                 }
 
                 // Everytime a new month in the spinner is selected, redraw Listview.
-                adapter_left.notifyDataSetChanged();
+              //  adapter_left.notifyDataSetChanged();
 
             }
 
@@ -263,7 +272,7 @@ public class InputActivity extends AppCompatActivity {
 
 
         //*********** ListView initialization ************************************************//
-        listview_left.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+     /*   listview_left.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -313,7 +322,7 @@ public class InputActivity extends AppCompatActivity {
 
 
         });
-
+*/
         // ********* Spinner for work item initialization******************************//
         spinnerDay.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -334,7 +343,7 @@ public class InputActivity extends AppCompatActivity {
                 sqLiteDatabase.execSQL("UPDATE workdays SET type=" + Integer.toString(position) + " WHERE day=" + Integer.toString(Day) + " AND month=" + Integer.toString(Month) + " AND year=" + Integer.toString(Year));
 
                 // Notify the Listview Adapter for a redraw.
-                adapter_left.notifyDataSetChanged();
+                //adapter_left.notifyDataSetChanged();
             }
 
             @Override
@@ -357,7 +366,7 @@ public class InputActivity extends AppCompatActivity {
                 DataBaseHelper.setBackDatabase(month, year, context.openOrCreateDatabase("Workdays", context.MODE_PRIVATE, null), "workdays");
 
                 ListView listView = (ListView) findViewById(R.id.listView);
-                adapter_left.notifyDataSetChanged();
+               // adapter_left.notifyDataSetChanged();
             }
         });
 
@@ -399,7 +408,7 @@ public class InputActivity extends AppCompatActivity {
         // redraw all the Listview lines.
         // Temporal solution! Listview adapter is saved inside
         // the custom class AdapterContainer
-        adapterContainer.getArrayAdapters().notifyDataSetChanged();
+       // adapterContainer.getArrayAdapters().notifyDataSetChanged();
 
     }
 

@@ -32,8 +32,10 @@ import java.util.GregorianCalendar;
  *      10/07/2016: Added the class description.
  *
  *
- *
- *
+ *      18/08/2016:
+ *                  +Changed activity layout
+ *                  +Changed listview item layout
+ *                  + Added functionality to automatically configure the listview according to the specified day
  /***********************************************/
 public class CustomAdapter extends BaseAdapter{
 
