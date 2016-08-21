@@ -17,6 +17,7 @@ import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -45,19 +46,23 @@ public class CustomAdapter extends BaseAdapter{
     int length;
     int Position;
     boolean side;
+    GregorianCalendar calendar;
 
 
 
-
-    public CustomAdapter(Context context,ArrayList<String> list, boolean side) {
+    public CustomAdapter(Context context, ArrayList<String> list, boolean side, int month, int year) {
         super();
+
         this.context=context;
         this.list=list;
-        SharedPreferences preferences=context.getSharedPreferences("Constants", context.MODE_PRIVATE);
-        length=preferences.getInt("length",0);
         this.side=side;
         Position=0;
 
+        calendar=new GregorianCalendar();
+        calendar.set(Calendar.MONTH, month);
+        calendar.set(GregorianCalendar.YEAR, year);
+
+        this.length=calendar.getActualMaximum(calendar.DAY_OF_MONTH);
     }
 
 
@@ -66,8 +71,7 @@ public class CustomAdapter extends BaseAdapter{
     // This method is used by the Listview to determine the number of rows it will have to display.
     @Override
     public int getCount() {
-        SharedPreferences preferences=context.getSharedPreferences("Constants", context.MODE_PRIVATE);
-        length=preferences.getInt("length",0);
+
        if(side){
            return length-16;
        }
@@ -101,68 +105,71 @@ public class CustomAdapter extends BaseAdapter{
 // The most important Callback. Here the Adapter returns a View that has to be displayed on the current row.
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+        // Get correct day of the month in the listview
         if(side){
             position=position+16;
         }
+        calendar.set(Calendar.DATE, position+1);
 
-
-        //Open the database
-        SQLiteDatabase sqLiteDatabase=context.openOrCreateDatabase("Workdays", context.MODE_PRIVATE, null);
+        //Open the database, you need it to retrieve saved data for a particular day
+        //SQLiteDatabase sqLiteDatabase=context.openOrCreateDatabase("Workdays", context.MODE_PRIVATE, null);
 
 
         //Get system inflater and inflate .xml row description into a View object
         LayoutInflater inflater=(LayoutInflater)      context.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
         View v=inflater.inflate(R.layout.listview_row, null);
 
+
         //Read current month and month length fromt he preference file
-        SharedPreferences preferences=context.getSharedPreferences("Constants", context.MODE_PRIVATE);
-        int month=preferences.getInt("month", 0);
-        length=preferences.getInt("length",0);
+        //SharedPreferences preferences=context.getSharedPreferences("Constants", context.MODE_PRIVATE);
+        //int month=preferences.getInt("month", 0);
+        //length=preferences.getInt("length",0);
         // TO DO, add another entry into the Preference file for the year
-        int year=2016;
+        //int year=2016;
 
 
         // Use the GregorianCalendar class to get the day of the week for the specified date
         // Months start with 0, position starts with 0
-        GregorianCalendar calendar=new GregorianCalendar(year,month-1,position+1);
+        //GregorianCalendar calendar=new GregorianCalendar(year,month-1,position+1);
+
         // Get the day of the week as an Integer
         int day=calendar.get(Calendar.DAY_OF_WEEK);
 
         // Convert Gregorian interpretation into yours.
         switch (day){
-            case 1:
+            case Calendar.SUNDAY:
                 day=7;
                 break;
-            case 2:
+            case Calendar.MONDAY:
                 day=1;
                 break;
-            case 3:
+            case Calendar.TUESDAY:
                 day=2;
                 break;
-            case 4:
+            case Calendar.WEDNESDAY:
                 day=3;
                 break;
-            case 5:
+            case Calendar.THURSDAY:
                 day=4;
                 break;
-            case 6:
+            case Calendar.FRIDAY:
                 day=5;
                 break;
-            case 7:
+            case Calendar.SATURDAY:
                 day=6;
                 break;
 
         }
 
-
-
-        //Retrieve Views in a Listview row (note you are using View v that you inflated from an .XML that
-        // contains more primitive Views.
+        // Row GUI elements
         TextView dan=(TextView)v.findViewById(R.id.Day);
-        //TextView datum=(TextView) v.findViewById(R.id.Date);
         TextView type=(TextView) v.findViewById(R.id.Type);
         ImageView number = (ImageView) v.findViewById(R.id.number);
         ImageView background_type = (ImageView) v.findViewById(R.id.background_type);
+
+
+
+
         switch (position + 1){
             case 1:
                 number.setImageResource(R.drawable.one);
@@ -272,7 +279,7 @@ public class CustomAdapter extends BaseAdapter{
 
         // Fill the current day of the week with words that are inside a List
         dan.setText(list.get(day-1)      );
-
+        dan.setTextColor(Color.BLACK);
 
         Cursor cursor=null;
 
@@ -281,7 +288,7 @@ public class CustomAdapter extends BaseAdapter{
             }
 
             //Find the entry in the database for the particular date.
-            cursor = sqLiteDatabase.rawQuery("SELECT * FROM workdays WHERE day=" + Integer.toString(position+1) + " AND month=" + Integer.toString(month) + " AND year=" + Integer.toString(year), null);
+           cursor = MyDataBaseHelper.dbHelper.getWritableDatabase().rawQuery("SELECT * FROM workdays WHERE day=" + Integer.toString(position + 1) + " AND month="+ Integer.toString(calendar.get(Calendar.MONTH)+1) + " AND year=" + Integer.toString(calendar.get(calendar.YEAR)), null);
             //Always initialize the cursor after it receives a Query from a Database
             cursor.moveToFirst();
 
@@ -294,7 +301,7 @@ public class CustomAdapter extends BaseAdapter{
                 // Set type that you've read from the Database
                 switch (cursor.getInt(3)) {
                     case 0:
-                        type.setText("");
+                        type.setText("Empty");
                         break;
 
                     case 1:
@@ -320,9 +327,11 @@ public class CustomAdapter extends BaseAdapter{
 
             }
 
+        type.setTextColor(Color.BLACK);
         // If the day is Sunday make it red.
         if(day==7) {
         background_type.setImageResource(R.drawable.elemnt_rdec);
+
         }
         else{
             background_type.setImageResource(R.drawable.element_bel);
@@ -330,8 +339,8 @@ public class CustomAdapter extends BaseAdapter{
 
 
         // Close the cursor.
-        if(!cursor.isClosed() ) cursor.close();
-
+       if(!cursor.isClosed() ) cursor.close();
+        MyDataBaseHelper.dbHelper.close();
         //Return the View to the Listview.
         return v;
     }

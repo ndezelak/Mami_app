@@ -18,6 +18,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import java.io.IOException;
+
 /*********** REVISION HISTORY *****************
  *
  * 5/6/2016:
@@ -31,49 +33,26 @@ import android.widget.Button;
 
 
 public class MainActivity extends AppCompatActivity {
-
+ public String DATABASE_LOG="DATABASE";
  @Override
  protected void onCreate(Bundle savedInstanceState) {
   super.onCreate(savedInstanceState);
   setContentView(R.layout.activity_home_screen);
-
   int i=0;
-  //Database initialization with spec ified name and mode (Private means only this app can use it)
-  SQLiteDatabase sqLiteDatabase=getApplicationContext().openOrCreateDatabase("Workdays",this.MODE_PRIVATE,null);
-  // SQLLite instruction to create a table with the name workdays if it still doesn't exist
-  // (3) only means you reserve 3 Bytes for each entry
-  sqLiteDatabase.execSQL("CREATE TABLE IF NOT EXISTS workdays (day INT(3), month INT(3), year INT(3), type INT(3))");
-  //Type definition:
-  // 0->Prazno
-  // 1->Šank dopoldan
-  // 2->Šank popoldan
-  // 3->Kuhinja dopoldan
-  // 4->Kuhinja popoldan
-  // 5->Prosto
-  // 6->Dopust
+
+  // Create a new fresh instance of the DataBaseHelper class
+  MyDataBaseHelper.dbHelper = new DataBaseHelper(getApplicationContext());
 
 
- /*
-  //Read through the database using a Cursor. Select everything from the Database
-  Cursor cursor=sqLiteDatabase.rawQuery("SELECT * FROM workdays",null);
-  int array=0;
-
-  // If the cursor is not empty
-  if(cursor.moveToFirst() && cursor!=null ) {
-   // Store all the integers (day, month, year, type) into an array
-   do{
-    array = cursor.getInt(0);
-    Log.i("Days in database:", Integer.toString(array));
-    array = cursor.getInt(1);
-    Log.i("Month in database:", Integer.toString(array));
-    array = cursor.getInt(2);
-    Log.i("Year in database:", Integer.toString(array));
-    array = cursor.getInt(3);
-    Log.i("Type in database:", Integer.toString(array));
-   }while( cursor.moveToNext() );
+ // Copy the old database which is located under assets folder if no database already exists.
+  try {
+    MyDataBaseHelper.dbHelper.createDataBase();
+  }catch(IOException e){
+    Log.d(DATABASE_LOG, "Error while creating a database: "+ e.getMessage());
   }
 
-*/
+
+
 
   Button weekButton=(Button)findViewById(R.id.Button_week);
   Button monthButton=(Button)findViewById(R.id.Button_month);

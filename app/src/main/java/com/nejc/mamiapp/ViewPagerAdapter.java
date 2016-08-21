@@ -10,6 +10,8 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.util.Log;
 
+import java.util.Calendar;
+
 /*********** REVISION HISTORY *****************
  *
  *
@@ -18,23 +20,27 @@ import android.util.Log;
  *
  /***********************************************/
 public class ViewPagerAdapter extends FragmentStatePagerAdapter {
-
+    private final int min_year = 2016;
     public ViewPagerAdapter(FragmentManager fm) {
         super(fm);
     }
 
     @Override
     public Fragment getItem(int position) {
-        Log.d("ADAPTER", Integer.toString(position));
         WeekviewFragement fragment = new WeekviewFragement();
-        fragment.attach_layout(R.layout.month_input_fragment);
+        int year=min_year;
+        while(position > 11) {
+            position=position -12;
+            year++;
+        }
+        fragment.attach_layout(position, year);
         return fragment;
 
     }
 
     @Override
     public int getCount() {
-        return 10;
+        return 24;
     }
 
 }

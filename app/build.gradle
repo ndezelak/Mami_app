@@ -5,17 +5,16 @@ apply plugin: 'com.android.application'
 android {
     signingConfigs {
         Signing {
-            storeFile file('C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\KeyStore\\Key.jks')
-            storePassword 'nerdrek1'
             keyAlias 'MamiAppAndroidKey'
-            keyPassword 'nerdek1'
-
+            keyPassword 'nerdrek1'
+            storeFile file('C:\\Users\\Nejc\\Software Development\\Android Studio Projects\\MamiApp2\\KeyStore\\Key.jks')
+            storePassword 'nerdrek1'
         }
     }
     compileSdkVersion 23
     buildToolsVersion "23.0.1"
     defaultConfig {
-        applicationId "com.nejc.mamiapp"
+        applicationId 'com.nejc.mamiapp2'
         minSdkVersion 16
         targetSdkVersion 23
         versionCode 1
@@ -24,7 +23,7 @@ android {
     // Here you can define multiple build types
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             //signingConfig signingConfigs.Signing
             manifestPlaceholders = [appName: "MamiApp"]
@@ -35,6 +34,8 @@ android {
             versionNameSuffix '-DEBUG'
             manifestPlaceholders = [appName: "MamiApp-TEST"]
         }
+    }
+    productFlavors {
     }
 }
 

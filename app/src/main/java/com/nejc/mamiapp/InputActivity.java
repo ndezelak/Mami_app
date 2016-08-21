@@ -29,9 +29,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Calendar;
-import java.util.List;
 
 
 /*********** REVISION HISTORY *****************
@@ -54,7 +52,6 @@ public class InputActivity extends AppCompatActivity {
     //ListView listview_left = null;
     TextView text = null;
     Spinner spinnerDay = null;
-    Spinner spinnerMonth = null;
 
 
     @Override
@@ -146,7 +143,7 @@ public class InputActivity extends AppCompatActivity {
         //listview_right = (ListView) findViewById(R.id.listView_right);
         text = (TextView) findViewById(R.id.TextDay);
         spinnerDay = (Spinner) findViewById(R.id.spinner_day);
-        spinnerMonth = (Spinner) findViewById(R.id.spinner_month);
+
         ViewPager pager = (ViewPager) findViewById(R.id.pager);
 
 
@@ -154,6 +151,7 @@ public class InputActivity extends AppCompatActivity {
 
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         pager.setAdapter(adapter);
+        pager.setOffscreenPageLimit(2);
 
         //startService(intent);
 
@@ -177,18 +175,6 @@ public class InputActivity extends AppCompatActivity {
             spinnerDay.setAdapter(spinnerAdapter);
 
         }
-
-        //*********Spinner Month Adapter Initialization*************************************************//
-
-        //Put months into an arrayList
-        // TODO: Use string.xml
-        String[] monthsStrings = {"Januar", "Februar", "Marec", "April", "Maj", "Junij", "Julij", "Avgust", "September", "Oktober", "November", "December"};
-        List<String> months = new ArrayList<String>(Arrays.asList(monthsStrings));
-
-
-        //Set the arrayAdapter for the spinner using a standard layout
-        ArrayAdapter<String> adapterMonth = new ArrayAdapter<String>(this, android.R.layout.select_dialog_item, months);
-        spinnerMonth.setAdapter(adapterMonth);
 
 
         //**************Listview Adapter initialization ********************//
@@ -216,60 +202,15 @@ public class InputActivity extends AppCompatActivity {
         // Save this adapter to the adapterContainer
         adapterContainer = new AdapterContainer(adapter_left);
 */
-        //*********************Month Spinner Initialization********************************************************//
-        // Spinner onItem selected listener. It is used to save current month to the preference file
-        // and determine size of the listview (using a lookup table)
-        spinnerMonth.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-                //Determine the selected month and month length in days
-                //TODO: Use GregorianCalendar class to determine month size
-                int month = (int) id + 1;
-                int length = 0;
-                if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
-                    length = 31;
-                }
-                if (month == 4 || month == 6 || month == 9 || month == 11) {
-                    length = 30;
-                }
-                if (month == 2) length = 29;
-
-
-                //Add these values to the preference file that keeps track of selected month and its length.
-                SharedPreferences preferences = getApplicationContext().getSharedPreferences("Constants", getApplicationContext().MODE_PRIVATE);
-                SharedPreferences.Editor editor1 = preferences.edit();
-                editor1.putInt("month", month);
-                editor1.putInt("length", length);
-                editor1.commit();
-
-
-                //Initialize the particular month of the year in the database
-                // TODO: This might take quite a long time? Use a profiler to check this assumption.
-                for (int i = 1; i <= length; i++) {
-
-                    DataBaseHelper.initializeDatabase(i, month, 2016, openOrCreateDatabase("Workdays", getApplicationContext().MODE_PRIVATE, null), "workdays");
-                }
-
-                // Everytime a new month in the spinner is selected, redraw Listview.
-              //  adapter_left.notifyDataSetChanged();
-
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-
 
         //********* Preference File Initialization *************************************************//
+/*
         //Set Preference's month to the currently selected one
         // TODO: Isn't this already done while spinner is initialized?
         SharedPreferences.Editor editor = pref.edit();
         editor.putInt("month", (int) spinnerMonth.getSelectedItemId() + 1);
         editor.commit();
-
+*/
 
         //*********** ListView initialization ************************************************//
      /*   listview_left.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -330,7 +271,7 @@ public class InputActivity extends AppCompatActivity {
 
 
                 // Open Database
-                SQLiteDatabase sqLiteDatabase = context.openOrCreateDatabase("Workdays", context.MODE_PRIVATE, null);
+                //SQLiteDatabase sqLiteDatabase = context.openOrCreateDatabase("Workdays", context.MODE_PRIVATE, null);
                 int i = 0;
 
                 // Get the current selected day from the preferences.
@@ -340,7 +281,7 @@ public class InputActivity extends AppCompatActivity {
                 int Day = pref.getInt("day", 1);
 
                 //Save the selected type (which is exactly the position) to the Database
-                sqLiteDatabase.execSQL("UPDATE workdays SET type=" + Integer.toString(position) + " WHERE day=" + Integer.toString(Day) + " AND month=" + Integer.toString(Month) + " AND year=" + Integer.toString(Year));
+                //sqLiteDatabase.execSQL("UPDATE workdays SET type=" + Integer.toString(position) + " WHERE day=" + Integer.toString(Day) + " AND month=" + Integer.toString(Month) + " AND year=" + Integer.toString(Year));
 
                 // Notify the Listview Adapter for a redraw.
                 //adapter_left.notifyDataSetChanged();
@@ -363,7 +304,7 @@ public class InputActivity extends AppCompatActivity {
                 int year = 2016;
 
                 // Here you use a Wrapper for making the code look cleaner.
-                DataBaseHelper.setBackDatabase(month, year, context.openOrCreateDatabase("Workdays", context.MODE_PRIVATE, null), "workdays");
+               // DataBaseHelper.setBackDatabase(month, year, context.openOrCreateDatabase("Workdays", context.MODE_PRIVATE, null), "workdays");
 
                 ListView listView = (ListView) findViewById(R.id.listView);
                // adapter_left.notifyDataSetChanged();
@@ -385,7 +326,7 @@ public class InputActivity extends AppCompatActivity {
         currentday = currentDate.get(Calendar.DAY_OF_MONTH);
 
         Log.i("Database", "Application context inside onResume is: " + getApplicationContext().toString());
-        SQLiteDatabase base = getApplicationContext().openOrCreateDatabase("Workdays", getApplicationContext().MODE_PRIVATE, null);
+        /*SQLiteDatabase base = getApplicationContext().openOrCreateDatabase("Workdays", getApplicationContext().MODE_PRIVATE, null);
 
 
         Cursor cursor = base.rawQuery("SELECT * FROM " + "Workdays" + " WHERE day=" +
@@ -400,9 +341,8 @@ public class InputActivity extends AppCompatActivity {
         }
 
         spinnerDay.setSelection(type);
-        spinnerMonth.setSelection(currentmonth);
         text.setText("Datum: " + Integer.toString(currentday) + "." + Integer.toString(currentmonth + 1) + ".2016");
-
+*/
 
         // After you have changed the spinners you should
         // redraw all the Listview lines.
