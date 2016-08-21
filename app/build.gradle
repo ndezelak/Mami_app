@@ -5,10 +5,10 @@ apply plugin: 'com.android.application'
 android {
     signingConfigs {
         Signing {
-            keyAlias 'MamiAppAndroidKey'
-            keyPassword 'nerdrek1'
-            storeFile file('C:\\Users\\Nejc\\Software Development\\Android Studio Projects\\MamiApp2\\KeyStore\\Key.jks')
-            storePassword 'nerdrek1'
+            keyAlias 'NewKey'
+            keyPassword 'mypassword1'
+            storeFile file('C:/Users/Nejc/KeyStore')
+            storePassword 'mypassword'
         }
     }
     compileSdkVersion 23
