@@ -44,6 +44,7 @@ public class WeekviewFragement extends android.support.v4.app.Fragment {
         ListView listview_left = (ListView) listviewLayout.findViewById(R.id.listView);
         ListView listview_right = (ListView) listviewLayout.findViewById(R.id.listView_right);
         ImageView month_title = (ImageView) listviewLayout.findViewById(R.id.month_title);
+        ImageView year_title = (ImageView) listviewLayout.findViewById(R.id.year_title);
 
         ArrayList<String> arrayList = new ArrayList<String>();
         // TODO: Use string.xml
@@ -61,6 +62,7 @@ public class WeekviewFragement extends android.support.v4.app.Fragment {
         listview_left.setAdapter(adapter_listview_left);
         listview_right.setAdapter(adapter_listview_right);
 
+        // Set month image
         switch (month) {
             case Calendar.JANUARY:
                 month_title.setImageResource(R.drawable.januar);
@@ -100,6 +102,28 @@ public class WeekviewFragement extends android.support.v4.app.Fragment {
                 break;
         }
 
+        // Set year image
+        switch(year){
+            case 2016:
+                year_title.setImageResource(R.drawable.y2016);
+                break;
+            case 2017:
+                year_title.setImageResource(R.drawable.y2017);
+                break;
+            case 2018:
+                year_title.setImageResource(R.drawable.y2018);
+                break;
+            case 2019:
+                year_title.setImageResource(R.drawable.y2019);
+                break;
+            case 2020:
+                year_title.setImageResource(R.drawable.y2020);
+                break;
+
+        }
+
+        // Use a single GridView instead of two ListViews
+        // ListView adapter should be usable for the GrdiView too.
         listview_left.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

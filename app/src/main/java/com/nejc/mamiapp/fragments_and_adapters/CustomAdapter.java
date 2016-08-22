@@ -162,8 +162,8 @@ public class CustomAdapter extends BaseAdapter{
         }
 
         // Row GUI elements
-        TextView dan=(TextView)v.findViewById(R.id.Day);
-        TextView type=(TextView) v.findViewById(R.id.Type);
+        ImageView work_type = (ImageView) v.findViewById(R.id.work_type);
+        ImageView day_of_week = (ImageView) v.findViewById(R.id.day_of_week);
         ImageView number = (ImageView) v.findViewById(R.id.number);
         ImageView background_type = (ImageView) v.findViewById(R.id.background_type);
 
@@ -278,8 +278,41 @@ public class CustomAdapter extends BaseAdapter{
 
 
         // Fill the current day of the week with words that are inside a List
-        dan.setText(list.get(day-1)      );
-        dan.setTextColor(Color.BLACK);
+       switch(day){
+           case 1:
+               day_of_week.setImageResource(R.drawable.p);
+               break;
+           case 2:
+               day_of_week.setImageResource(R.drawable.t);
+               break;
+           case 3:
+               day_of_week.setImageResource(R.drawable.s);
+               break;
+           case 4:
+               day_of_week.setImageResource(R.drawable.cetrtek);
+                break;
+           case 5:
+               day_of_week.setImageResource(R.drawable.p);
+               break;
+           case 6:
+               day_of_week.setImageResource(R.drawable.s);
+               break;
+           case 7:
+               day_of_week.setImageResource(R.drawable.n);
+               break;
+       }
+
+
+        // If the day is Sunday make it red.
+
+        if(day==7) {
+            background_type.setImageResource(R.drawable.element_rdec_new);
+
+        }
+        else{
+            background_type.setImageResource(R.drawable.kvadrat_bel_nov);
+        }
+
 
         Cursor cursor=null;
 
@@ -301,41 +334,40 @@ public class CustomAdapter extends BaseAdapter{
                 // Set type that you've read from the Database
                 switch (cursor.getInt(3)) {
                     case 0:
-                        type.setText("Empty");
+                        work_type.setImageDrawable(null);
                         break;
 
                     case 1:
-                        type.setText("Šank dopoldan");
+
+                        work_type.setImageResource(R.drawable.dop_sanka_small);
+
                         break;
                     case 2:
-                        type.setText("Šank popoldan");
+                        work_type.setImageResource(R.drawable.pop_sank_small);
+
                         break;
                     case 3:
-                        type.setText("Kuhinja dopoldan");
+                        work_type.setImageResource(R.drawable.dop_k_small);
+
                         break;
                     case 4:
-                        type.setText("Kuhinja popoldan");
+                        work_type.setImageResource(R.drawable.pop_k_small);
+
                         break;
                     case 5:
-                        type.setText("Prosto");
+                        work_type.setImageResource(R.drawable.prosto_small);
+
                         break;
                     case 6:
-                        type.setText("Dopust");
+                        work_type.setImageResource(R.drawable.dopust_small);
+
                         break;
 
                 }
 
             }
 
-        type.setTextColor(Color.BLACK);
-        // If the day is Sunday make it red.
-        if(day==7) {
-        background_type.setImageResource(R.drawable.elemnt_rdec);
 
-        }
-        else{
-            background_type.setImageResource(R.drawable.element_bel);
-        }
 
 
         // Close the cursor.
