@@ -25,7 +25,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.MainActivity">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.LAUNCHER" />
@@ -33,10 +33,10 @@
         </activity>
 
         <activity
-            android:name=".InputActivity" />
+            android:name=".activities.InputActivity" />
 
         <activity
-            android:name=".OverviewActivity" />
+            android:name=".activities.OverviewActivity" />
 
     </application>
 

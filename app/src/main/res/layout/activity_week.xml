@@ -1,53 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearlayout_week_activity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="bottom|fill_vertical"
-    tools:context="com.nejc.mamiapp.WeekActivity"
-    android:background="@drawable/back">
+    android:layout_weight="1"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    tools:context="com.nejc.mamiapp.WeekActivity">
+    >
 
 
-
-    <LinearLayout
-        android:orientation="vertical"
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+       >
+
+    </android.support.v4.view.ViewPager>
 
 
-        <android.support.v4.view.ViewPager
-            android:id="@+id/pager"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-        </android.support.v4.view.ViewPager>
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="7"
-            android:transitionGroup="false">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Izberi dan"
-                android:id="@+id/TextDay"
-                android:layout_gravity="left|top"
-                android:textSize="30dp" />
-
-            <Spinner
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/spinner_day"
-                android:layout_gravity="left|top"
-                android:visibility="visible"
-                android:layout_marginTop="70dp"/>
-
-        </FrameLayout>
+</FrameLayout>
 
 
-    </LinearLayout>
-
-
-</RelativeLayout>
