@@ -4,9 +4,8 @@ package com.nejc.mamiapp.fragments_and_adapters;
  * @author Nejc
  *
  * Description:
- * Implementation of BaseAdapter class which manages Listviews and Spinners
- * The adapter is able to use the listview row layout and populate it with
- * appropriate days of the week and data from the database for every day of the month
+        * Figures out the day of the week
+        * Populates the GUI elements of a single row accordingly to the given date and database data
  */
 
 
@@ -21,7 +20,9 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.nejc.mamiapp.helpers.InterFragmentInterface;
 import com.nejc.mamiapp.helpers.MyDataBaseHelper;
 import com.nejc.mamiapp.R;
 
@@ -37,31 +38,37 @@ import java.util.GregorianCalendar;
  *                  +Changed activity layout
  *                  +Changed listview item layout
  *                  + Added functionality to automatically configure the listview according to the specified day
+ *
+ *       03/09/2016:
+ *                  + Current data can be reported to the main activity via the custom interfragment interface
  /***********************************************/
 public class CustomAdapter extends BaseAdapter{
 
 
     Context context;
-    ArrayList<String> list;
-    int length;
-    int Position;
-    boolean side;
+
+    private int length;
+    private int Position;
+    private int month;
+    private int year;
+    private boolean side;
     GregorianCalendar calendar;
+    private int numItems;
+    InterFragmentInterface commInterface;
 
 
-
-    public CustomAdapter(Context context, ArrayList<String> list, boolean side, int month, int year) {
+    public CustomAdapter(Context context, boolean side, int month, int year, InterFragmentInterface commInterface) {
         super();
-
+        this.commInterface=commInterface;
         this.context=context;
-        this.list=list;
         this.side=side;
         Position=0;
-
+        this.month=month;
+        this.year=year;
+        // Set the calendar and length of the month
         calendar=new GregorianCalendar();
         calendar.set(Calendar.MONTH, month);
         calendar.set(GregorianCalendar.YEAR, year);
-
         this.length=calendar.getActualMaximum(calendar.DAY_OF_MONTH);
     }
 
@@ -71,12 +78,15 @@ public class CustomAdapter extends BaseAdapter{
     // This method is used by the Listview to determine the number of rows it will have to display.
     @Override
     public int getCount() {
-
+        // Small hack for using two listviews for the calendar. Should be replaced in the future
+        // with a gridView
        if(side){
-           return length-16;
+           numItems=length-16;
+           return numItems;
        }
         else{
-           return 16;
+           numItems=16;
+           return numItems;
        }
     }
 
@@ -105,19 +115,36 @@ public class CustomAdapter extends BaseAdapter{
 // The most important Callback. Here the Adapter returns a View that has to be displayed on the current row.
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        // Get correct day of the month in the listview
+        // Get correct day of the month in the listview. Hack for using two listViews
         if(side){
             position=position+16;
         }
+        final int mposition=position;
+        // Set the calendar day
         calendar.set(Calendar.DATE, position+1);
 
         //Open the database, you need it to retrieve saved data for a particular day
         //SQLiteDatabase sqLiteDatabase=context.openOrCreateDatabase("Workdays", context.MODE_PRIVATE, null);
 
 
-        //Get system inflater and inflate .xml row description into a View object
+        //Generate a layout for the listview row
         LayoutInflater inflater=(LayoutInflater)      context.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
         View v=inflater.inflate(R.layout.listview_row, null);
+        v.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               commInterface.onListItemClicked(mposition+1,month+1,year);
+            }
+        });
+
+        // Row GUI elements
+        ImageView work_type = (ImageView) v.findViewById(R.id.work_type);
+        ImageView day_of_week = (ImageView) v.findViewById(R.id.day_of_week);
+        ImageView number = (ImageView) v.findViewById(R.id.number);
+        ImageView background_type = (ImageView) v.findViewById(R.id.background_type);
+
+
+        //v.getLayoutParams().height=parent.getLayoutParams().height/numItems;
 
 
         //Read current month and month length fromt he preference file
@@ -131,6 +158,7 @@ public class CustomAdapter extends BaseAdapter{
         // Use the GregorianCalendar class to get the day of the week for the specified date
         // Months start with 0, position starts with 0
         //GregorianCalendar calendar=new GregorianCalendar(year,month-1,position+1);
+
 
         // Get the day of the week as an Integer
         int day=calendar.get(Calendar.DAY_OF_WEEK);
@@ -161,15 +189,7 @@ public class CustomAdapter extends BaseAdapter{
 
         }
 
-        // Row GUI elements
-        ImageView work_type = (ImageView) v.findViewById(R.id.work_type);
-        ImageView day_of_week = (ImageView) v.findViewById(R.id.day_of_week);
-        ImageView number = (ImageView) v.findViewById(R.id.number);
-        ImageView background_type = (ImageView) v.findViewById(R.id.background_type);
-
-
-
-
+        // Set the number image
         switch (position + 1){
             case 1:
                 number.setImageResource(R.drawable.one);
@@ -267,17 +287,10 @@ public class CustomAdapter extends BaseAdapter{
             default:
                 number.setImageResource(R.drawable.eight);
                 break;
-
-
         }
 
-        //***********Fill those views with data***************************************************//
-        // Here you should do the following:
-        //                                    -According to your position and month you need to determine the day of the week
-        //                                      -According to your position and month you need to read the value from the database
 
-
-        // Fill the current day of the week with words that are inside a List
+        // Fill the current day of the week with an image
        switch(day){
            case 1:
                day_of_week.setImageResource(R.drawable.p);
@@ -303,7 +316,7 @@ public class CustomAdapter extends BaseAdapter{
        }
 
 
-        // If the day is Sunday make it red.
+        // If the day is Sunday make the row background red
 
         if(day==7) {
             background_type.setImageResource(R.drawable.element_rdec_new);

@@ -21,6 +21,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.nejc.mamiapp.R;
 import com.nejc.mamiapp.fragments_and_adapters.ChooserFragment;
@@ -48,10 +49,11 @@ public class InputActivity extends AppCompatActivity implements InterFragmentInt
     PendingIntent reNotify;
     Context context;
     SharedPreferences pref;
+    android.app.FragmentManager manager;
 
     // XML Widgets
     ViewPager pager = null;
-    android.app.Fragment fragmentToAdd = null;
+    ChooserFragment fragmentToAdd = null;
 
     @Override
     // Initializes all the GUI components
@@ -60,10 +62,11 @@ public class InputActivity extends AppCompatActivity implements InterFragmentInt
         // Set activity layout
         setContentView(R.layout.activity_week);
 
+        manager = getFragmentManager();
         // App context and preference file
         context = getApplicationContext();
         pref = context.getSharedPreferences("Constants", context.MODE_PRIVATE);
-        fragmentToAdd = (android.app.Fragment) new ChooserFragment();
+        fragmentToAdd =  new ChooserFragment();
         // All GUI objects
         pager = (ViewPager) findViewById(R.id.pager);
 
@@ -73,17 +76,17 @@ public class InputActivity extends AppCompatActivity implements InterFragmentInt
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         pager.setAdapter(adapter);
         pager.setOffscreenPageLimit(2);
-
+        // *********************************************************//
         //startService(intent);
 
     }//End of onCreate
 
     @Override
-    // Display current month and day and highlight that day in the listview
+    // Nothing happens here so far
     protected void onResume() {
-        Log.i("Database", "You are inside on Resume");
+        //Log.i("Database", "You are inside on Resume");
         super.onResume();
-        AlarmManager manager = (AlarmManager) this.getSystemService(ALARM_SERVICE);
+        //AlarmManager manager = (AlarmManager) this.getSystemService(ALARM_SERVICE);
 
 /*
         // Here you cancel all the Alarms and initialize a new one at 9 pm next day
@@ -120,31 +123,39 @@ public class InputActivity extends AppCompatActivity implements InterFragmentInt
         Log.d("Alarm", "System clock in miliseconds: "+Long.toString(System.currentTimeMillis()));
 */
     }
-    // Interfragment communication interface
+    // *************Interfragment communication interface**************************************//
 
 
-    // This method should be called when a listview item from the ViewPager fragment is clicked
+    // This method is called from within the fragment that is populating the viewPager
     @Override
     public void onListItemClicked(int date, int month, int year) {
-        android.app.FragmentManager manager = getFragmentManager();
-        if (manager.findFragmentById(R.layout.fragment_chooser) == null) {
+        // Get the fragment manager
+
+        // - If the fragment layout exists, show the fragment
+        //   and add animation to it.
+        // - Also report the selected date to the fragment
+        if (!fragmentToAdd.isAdded()) {
             android.app.FragmentTransaction transaction = manager.beginTransaction();
             transaction.setCustomAnimations(R.animator.translate_vertical_up, R.animator.translate_vertical_up);
             transaction.add(R.id.linearlayout_week_activity, fragmentToAdd);
             transaction.commit();
+            fragmentToAdd.setSelectedDate(date,month,year);
+
         }
+        Toast.makeText(getApplicationContext(),"Item " + Integer.toString(date)+"."+Integer.toString(month)+"."+Integer.toString(year)+ " has been clicked",Toast.LENGTH_SHORT).show();
     }
 
-    // This method should be called when the user choose an item (or presses something else)
+    // This method is called from the Fragment that represents the pop-up message
     @Override
     public void onHideChooser(int itemSelected) {
         // Hide ChooserFragment
-        // Update Listview with the newly selected item
         android.app.FragmentManager manager = getFragmentManager();
         android.app.FragmentTransaction transaction = manager.beginTransaction();
         transaction.setCustomAnimations(R.animator.translate_vertical_down, R.animator.translate_vertical_down);
         transaction.remove(fragmentToAdd);
         transaction.commit();
-    }
+        // Update Listview with the newly selected item
 
+    }
+    //******************************************************************************************//
 }// End of Activity

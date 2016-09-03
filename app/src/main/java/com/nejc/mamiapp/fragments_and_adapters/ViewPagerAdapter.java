@@ -2,6 +2,8 @@ package com.nejc.mamiapp.fragments_and_adapters;/**
  * @author Nejc
  * <p/>
  * Description:
+ * Keep track of the selected calendar month and return the
+ * appropriate WeekViewFragment instance to the attached ViewPager
  */
 
 
@@ -11,7 +13,9 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 
 /*********** REVISION HISTORY *****************
  *
- *
+ * 24.8.2016:
+ *      - Logic for determining the right calendar month
+ *      - Creating the WeekviewFragment with appropriate data
  *
  *
  *

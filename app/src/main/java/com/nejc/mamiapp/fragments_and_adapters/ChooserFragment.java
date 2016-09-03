@@ -18,6 +18,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.nejc.mamiapp.R;
+import com.nejc.mamiapp.helpers.DataBaseHelper;
 import com.nejc.mamiapp.helpers.InterFragmentInterface;
 
 import java.util.ArrayList;
@@ -25,9 +26,22 @@ import java.util.ArrayList;
 /**
  * Fragment used for displaying (and hiding) the item chooser dialog inside the InputActivity
  */
-public class ChooserFragment extends Fragment {
+public class ChooserFragment extends Fragment implements View.OnClickListener{
     Context mContext;
     InterFragmentInterface commInterface;
+
+    // GUI elements
+    private ImageView dop_kuh;
+    private ImageView pop_kuh;
+    private ImageView dop_sank;
+    private ImageView pop_sank;
+    private ImageView prosto;
+    private ImageView dopust;
+    private int day;
+    private int month;
+    private int year;
+
+
     // Fragment constructor
     public ChooserFragment() {
         super();
@@ -39,7 +53,12 @@ public class ChooserFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Here you should initialize the fragment layout and return it
         View layout = inflater.inflate(R.layout.fragment_chooser, container, false);
-
+        dop_kuh = (ImageView) layout.findViewById(R.id.dop_kuh_big);
+        pop_kuh = (ImageView) layout.findViewById(R.id.pop_kuh_big);
+        dop_sank = (ImageView) layout.findViewById(R.id.dop_sank_big);
+        pop_sank = (ImageView) layout.findViewById(R.id.pop_sank_big);
+        prosto = (ImageView) layout.findViewById(R.id.prosto_big);
+        dopust = (ImageView) layout.findViewById(R.id.dopust_big);
 
         return layout;
 
@@ -50,5 +69,38 @@ public class ChooserFragment extends Fragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         commInterface = (InterFragmentInterface) getActivity();
+    }
+
+    public void setSelectedDate(int day, int month, int year){
+        this.day=day;
+        this.month=month;
+        this.year=year;
+    }
+
+
+    @Override
+    public void onClick(View v) {
+        DataBaseHelper dbHelper = new DataBaseHelper(getActivity().getApplicationContext());
+        dbHelper.openDataBase();
+        switch(v.getId()){
+            case R.id.dop_kuh_big:
+                dbHelper.updateRow(day,month,year,3);
+                break;
+            case R.id.pop_kuh_big:
+                dbHelper.updateRow(day,month,year,4);
+                break;
+            case R.id.dop_sank_big:
+                dbHelper.updateRow(day,month,year,1);
+                break;
+            case R.id.pop_sank_big:
+                dbHelper.updateRow(day,month,year,2);
+                break;
+            case R.id.prosto_big:
+                dbHelper.updateRow(day,month,year,5);
+                break;
+            case R.id.dopust_big:
+                dbHelper.updateRow(day,month,year,6);
+                break;
+        }
     }
 }

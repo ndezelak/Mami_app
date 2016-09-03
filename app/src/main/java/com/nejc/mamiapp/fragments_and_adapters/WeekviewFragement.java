@@ -1,6 +1,13 @@
 package com.nejc.mamiapp.fragments_and_adapters;
 
-// First fragment class representing a layout that is swipeable
+/* @author Nejc
+* <p/>
+* Description:
+      * Fragment respresenting a single viewpager layout
+      * It configures the GUI elements and gets reference to the activity it was created in so
+      *  that inter fragment communication is possible.
+      *
+*/
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -18,11 +25,29 @@ import com.nejc.mamiapp.helpers.InterFragmentInterface;
 import java.util.ArrayList;
 import java.util.Calendar;
 
+/***********
+ * REVISION HISTORY *****************
+ * 24/08/2016:
+ * - GUI elements are configured according to the given data
+ * - interfragment interface has been exposed for testing purposes on both listviews.
+ *
+ * 3/9/2016:
+ * -Removed arraylist respresenting days of the week
+ * -Listview adapter is defined now in the onActivityCreated callback as reference to the interfragment
+ * interface is needed.
+ *
+ *
+ * /
+ ***********************************************/
 
 public class WeekviewFragement extends android.support.v4.app.Fragment {
     int month;
     int year;
     InterFragmentInterface commInterface;
+
+    ListView listview_left ;
+    ListView listview_right;
+
 
     public WeekviewFragement() {
         super();
@@ -41,26 +66,14 @@ public class WeekviewFragement extends android.support.v4.app.Fragment {
         View listviewLayout = inflater.inflate(R.layout.month_input_fragment, container, false);
 
         // GUI elements of the layout
-        ListView listview_left = (ListView) listviewLayout.findViewById(R.id.listView);
-        ListView listview_right = (ListView) listviewLayout.findViewById(R.id.listView_right);
+        listview_left = (ListView) listviewLayout.findViewById(R.id.listView);
+        listview_right = (ListView) listviewLayout.findViewById(R.id.listView_right);
         ImageView month_title = (ImageView) listviewLayout.findViewById(R.id.month_title);
         ImageView year_title = (ImageView) listviewLayout.findViewById(R.id.year_title);
 
-        ArrayList<String> arrayList = new ArrayList<String>();
-        // TODO: Use string.xml
-        arrayList.add("P");
-        arrayList.add("T");
-        arrayList.add("S");
-        arrayList.add("Č");
-        arrayList.add("P");
-        arrayList.add("S");
-        arrayList.add("N");
-
         // Attach adapters to the listviews
-        CustomAdapter adapter_listview_left = new CustomAdapter(getActivity().getApplicationContext(), arrayList, false, month, year);
-        CustomAdapter adapter_listview_right = new CustomAdapter(getActivity().getApplicationContext(), arrayList, true, month, year);
-        listview_left.setAdapter(adapter_listview_left);
-        listview_right.setAdapter(adapter_listview_right);
+
+
 
         // Set month image
         switch (month) {
@@ -103,7 +116,7 @@ public class WeekviewFragement extends android.support.v4.app.Fragment {
         }
 
         // Set year image
-        switch(year){
+        switch (year) {
             case 2016:
                 year_title.setImageResource(R.drawable.y2016);
                 break;
@@ -122,8 +135,7 @@ public class WeekviewFragement extends android.support.v4.app.Fragment {
 
         }
 
-        // Use a single GridView instead of two ListViews
-        // ListView adapter should be usable for the GrdiView too.
+        // TODO: Use a single GridView instead of two ListViews. ListView adapter should be usable for the GrdiView too.
         listview_left.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -134,7 +146,7 @@ public class WeekviewFragement extends android.support.v4.app.Fragment {
         listview_right.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                commInterface.onListItemClicked(1,1,2016);
+                commInterface.onListItemClicked(1, 1, 2016);
             }
         });
 
@@ -145,5 +157,10 @@ public class WeekviewFragement extends android.support.v4.app.Fragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         commInterface = (InterFragmentInterface) getActivity();
+
+        CustomAdapter adapter_listview_left = new CustomAdapter(getActivity().getApplicationContext(), false, month, year, commInterface);
+        CustomAdapter adapter_listview_right = new CustomAdapter(getActivity().getApplicationContext(), true, month, year, commInterface);
+        listview_left.setAdapter(adapter_listview_left);
+        listview_right.setAdapter(adapter_listview_right);
     }
 }

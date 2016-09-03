@@ -30,7 +30,7 @@ public class MyDataBaseHelper {
         Cursor cursor=database.rawQuery( "SELECT * FROM "+databasename+" WHERE day=" +
                 Integer.toString(day)+" AND month="+Integer.toString(month)+" AND year="+Integer.toString(year),null);
 
-        // If particular day not yet inside the databse. Initialize it.
+        // If particular day not yet inside the database. Initialize it.
         if(cursor.getCount()==0){
 
             database.execSQL("INSERT INTO "+databasename+"(day,month,year,type) VALUES ("+Integer.toString(day)+","+
