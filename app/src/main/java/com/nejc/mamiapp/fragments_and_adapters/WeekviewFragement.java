@@ -19,10 +19,8 @@ import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.nejc.mamiapp.R;
-import com.nejc.mamiapp.fragments_and_adapters.CustomAdapter;
 import com.nejc.mamiapp.helpers.InterFragmentInterface;
 
-import java.util.ArrayList;
 import java.util.Calendar;
 
 /***********
@@ -47,7 +45,8 @@ public class WeekviewFragement extends android.support.v4.app.Fragment {
 
     ListView listview_left ;
     ListView listview_right;
-
+    WeekDaysAdapter adapter_listview_left;
+    WeekDaysAdapter adapter_listview_right;
 
     public WeekviewFragement() {
         super();
@@ -136,19 +135,7 @@ public class WeekviewFragement extends android.support.v4.app.Fragment {
         }
 
         // TODO: Use a single GridView instead of two ListViews. ListView adapter should be usable for the GrdiView too.
-        listview_left.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                commInterface.onHideChooser(2);
-            }
-        });
 
-        listview_right.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                commInterface.onListItemClicked(1, 1, 2016);
-            }
-        });
 
         return listviewLayout;
     }
@@ -158,9 +145,14 @@ public class WeekviewFragement extends android.support.v4.app.Fragment {
         super.onActivityCreated(savedInstanceState);
         commInterface = (InterFragmentInterface) getActivity();
 
-        CustomAdapter adapter_listview_left = new CustomAdapter(getActivity().getApplicationContext(), false, month, year, commInterface);
-        CustomAdapter adapter_listview_right = new CustomAdapter(getActivity().getApplicationContext(), true, month, year, commInterface);
+        adapter_listview_left = new WeekDaysAdapter(getActivity().getApplicationContext(), false, month, year, commInterface);
+        adapter_listview_right = new WeekDaysAdapter(getActivity().getApplicationContext(), true, month, year, commInterface);
         listview_left.setAdapter(adapter_listview_left);
         listview_right.setAdapter(adapter_listview_right);
+    }
+
+    public WeekDaysAdapter[] getListviewAdapters(){
+        WeekDaysAdapter[] adapters={adapter_listview_left,adapter_listview_right};
+        return adapters;
     }
 }

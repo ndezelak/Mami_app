@@ -12,4 +12,5 @@ public  interface InterFragmentInterface {
     public void onListItemClicked(int date, int month, int year);
 
     public void onHideChooser(int itemSelected);
+
 }

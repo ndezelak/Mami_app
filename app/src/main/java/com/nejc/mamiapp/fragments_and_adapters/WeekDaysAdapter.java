@@ -2,12 +2,11 @@ package com.nejc.mamiapp.fragments_and_adapters;
 
 /**
  * @author Nejc
- *
+ * <p/>
  * Description:
-        * Figures out the day of the week
-        * Populates the GUI elements of a single row accordingly to the given date and database data
+ * Figures out the day of the week
+ * Populates the GUI elements of a single row accordingly to the given date and database data
  */
-
 
 
 import android.app.Activity;
@@ -41,8 +40,10 @@ import java.util.GregorianCalendar;
  *
  *       03/09/2016:
  *                  + Current data can be reported to the main activity via the custom interfragment interface
+ *       04/09/2016:
+ *                  + Bugfix: Nonexistend database item is displayed as empty
  /***********************************************/
-public class CustomAdapter extends BaseAdapter{
+public class WeekDaysAdapter extends BaseAdapter {
 
 
     Context context;
@@ -57,22 +58,20 @@ public class CustomAdapter extends BaseAdapter{
     InterFragmentInterface commInterface;
 
 
-    public CustomAdapter(Context context, boolean side, int month, int year, InterFragmentInterface commInterface) {
+    public WeekDaysAdapter(Context context, boolean side, int month, int year, InterFragmentInterface commInterface) {
         super();
-        this.commInterface=commInterface;
-        this.context=context;
-        this.side=side;
-        Position=0;
-        this.month=month;
-        this.year=year;
+        this.commInterface = commInterface;
+        this.context = context;
+        this.side = side;
+        Position = 0;
+        this.month = month;
+        this.year = year;
         // Set the calendar and length of the month
-        calendar=new GregorianCalendar();
+        calendar = new GregorianCalendar();
         calendar.set(Calendar.MONTH, month);
         calendar.set(GregorianCalendar.YEAR, year);
-        this.length=calendar.getActualMaximum(calendar.DAY_OF_MONTH);
+        this.length = calendar.getActualMaximum(calendar.DAY_OF_MONTH);
     }
-
-
 
 
     // This method is used by the Listview to determine the number of rows it will have to display.
@@ -80,16 +79,14 @@ public class CustomAdapter extends BaseAdapter{
     public int getCount() {
         // Small hack for using two listviews for the calendar. Should be replaced in the future
         // with a gridView
-       if(side){
-           numItems=length-16;
-           return numItems;
-       }
-        else{
-           numItems=16;
-           return numItems;
-       }
+        if (side) {
+            numItems = length - 16;
+            return numItems;
+        } else {
+            numItems = 16;
+            return numItems;
+        }
     }
-
 
 
     // Not important
@@ -99,41 +96,35 @@ public class CustomAdapter extends BaseAdapter{
     }
 
 
-
-
-
-
     @Override
     public long getItemId(int position) {
         return position;
     }
 
 
-
-
-
-// The most important Callback. Here the Adapter returns a View that has to be displayed on the current row.
+    // The most important Callback. Here the Adapter returns a View that has to be displayed on the current row.
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         // Get correct day of the month in the listview. Hack for using two listViews
-        if(side){
-            position=position+16;
+        if (side) {
+            position = position + 16;
         }
-        final int mposition=position;
+        final int mposition = position;
         // Set the calendar day
-        calendar.set(Calendar.DATE, position+1);
+        calendar.set(Calendar.DATE, position + 1);
 
         //Open the database, you need it to retrieve saved data for a particular day
         //SQLiteDatabase sqLiteDatabase=context.openOrCreateDatabase("Workdays", context.MODE_PRIVATE, null);
 
 
         //Generate a layout for the listview row
-        LayoutInflater inflater=(LayoutInflater)      context.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
-        View v=inflater.inflate(R.layout.listview_row, null);
+        LayoutInflater inflater = (LayoutInflater) context.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
+        View v = inflater.inflate(R.layout.listview_row, null);
+
         v.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               commInterface.onListItemClicked(mposition+1,month+1,year);
+                commInterface.onListItemClicked(mposition + 1, month + 1, year);
             }
         });
 
@@ -161,36 +152,36 @@ public class CustomAdapter extends BaseAdapter{
 
 
         // Get the day of the week as an Integer
-        int day=calendar.get(Calendar.DAY_OF_WEEK);
+        int day = calendar.get(Calendar.DAY_OF_WEEK);
 
         // Convert Gregorian interpretation into yours.
-        switch (day){
+        switch (day) {
             case Calendar.SUNDAY:
-                day=7;
+                day = 7;
                 break;
             case Calendar.MONDAY:
-                day=1;
+                day = 1;
                 break;
             case Calendar.TUESDAY:
-                day=2;
+                day = 2;
                 break;
             case Calendar.WEDNESDAY:
-                day=3;
+                day = 3;
                 break;
             case Calendar.THURSDAY:
-                day=4;
+                day = 4;
                 break;
             case Calendar.FRIDAY:
-                day=5;
+                day = 5;
                 break;
             case Calendar.SATURDAY:
-                day=6;
+                day = 6;
                 break;
 
         }
 
         // Set the number image
-        switch (position + 1){
+        switch (position + 1) {
             case 1:
                 number.setImageResource(R.drawable.one);
                 break;
@@ -291,107 +282,106 @@ public class CustomAdapter extends BaseAdapter{
 
 
         // Fill the current day of the week with an image
-       switch(day){
-           case 1:
-               day_of_week.setImageResource(R.drawable.p);
-               break;
-           case 2:
-               day_of_week.setImageResource(R.drawable.t);
-               break;
-           case 3:
-               day_of_week.setImageResource(R.drawable.s);
-               break;
-           case 4:
-               day_of_week.setImageResource(R.drawable.cetrtek);
+        switch (day) {
+            case 1:
+                day_of_week.setImageResource(R.drawable.p);
                 break;
-           case 5:
-               day_of_week.setImageResource(R.drawable.p);
-               break;
-           case 6:
-               day_of_week.setImageResource(R.drawable.s);
-               break;
-           case 7:
-               day_of_week.setImageResource(R.drawable.n);
-               break;
-       }
+            case 2:
+                day_of_week.setImageResource(R.drawable.t);
+                break;
+            case 3:
+                day_of_week.setImageResource(R.drawable.s);
+                break;
+            case 4:
+                day_of_week.setImageResource(R.drawable.cetrtek);
+                break;
+            case 5:
+                day_of_week.setImageResource(R.drawable.p);
+                break;
+            case 6:
+                day_of_week.setImageResource(R.drawable.s);
+                break;
+            case 7:
+                day_of_week.setImageResource(R.drawable.n);
+                break;
+        }
 
 
         // If the day is Sunday make the row background red
 
-        if(day==7) {
+        if (day == 7) {
             background_type.setImageResource(R.drawable.element_rdec_new);
 
-        }
-        else{
+        } else {
             background_type.setImageResource(R.drawable.kvadrat_bel_nov);
         }
 
 
-        Cursor cursor=null;
+        Cursor cursor = null;
 
-            if(cursor!=null) {
-                if ( !cursor.isClosed() ) cursor.close();
-            }
+        if (cursor != null) {
+            if (!cursor.isClosed()) cursor.close();
+        }
 
-            //Find the entry in the database for the particular date.
-           cursor = MyDataBaseHelper.dbHelper.getWritableDatabase().rawQuery("SELECT * FROM workdays WHERE day=" + Integer.toString(position + 1) + " AND month="+ Integer.toString(calendar.get(Calendar.MONTH)+1) + " AND year=" + Integer.toString(calendar.get(calendar.YEAR)), null);
-            //Always initialize the cursor after it receives a Query from a Database
-            cursor.moveToFirst();
-
-
-            if (cursor.getCount() != 0) {
-                //TO DO: Cursor could be set even before the Query!
-               // datum.setText(Integer.toString(cursor.getInt(0)) + "." + Integer.toString(cursor.getInt(1)) + "." + Integer.toString(cursor.getInt(2)));
+        //Find the entry in the database for the particular date.
+        cursor = MyDataBaseHelper.dbHelper.getWritableDatabase().rawQuery("SELECT * FROM workdays WHERE day=" + Integer.toString(position + 1) + " AND month=" + Integer.toString(calendar.get(Calendar.MONTH) + 1) + " AND year=" + Integer.toString(calendar.get(calendar.YEAR)), null);
+        //Always initialize the cursor after it receives a Query from a Database
+        cursor.moveToFirst();
 
 
-                // Set type that you've read from the Database
-                switch (cursor.getInt(3)) {
-                    case 0:
-                        work_type.setImageDrawable(null);
-                        break;
+        if (cursor.getCount() != 0) {
+            //TO DO: Cursor could be set even before the Query!
+            // datum.setText(Integer.toString(cursor.getInt(0)) + "." + Integer.toString(cursor.getInt(1)) + "." + Integer.toString(cursor.getInt(2)));
 
-                    case 1:
 
-                        work_type.setImageResource(R.drawable.dop_sanka_small);
+            // Set type that you've read from the Database
+            switch (cursor.getInt(3)) {
+                case 0:
+                    work_type.setImageDrawable(null);
+                    break;
 
-                        break;
-                    case 2:
-                        work_type.setImageResource(R.drawable.pop_sank_small);
+                case 1:
 
-                        break;
-                    case 3:
-                        work_type.setImageResource(R.drawable.dop_k_small);
+                    work_type.setImageResource(R.drawable.dop_sanka_small);
 
-                        break;
-                    case 4:
-                        work_type.setImageResource(R.drawable.pop_k_small);
+                    break;
+                case 2:
+                    work_type.setImageResource(R.drawable.pop_sank_small);
 
-                        break;
-                    case 5:
-                        work_type.setImageResource(R.drawable.prosto_small);
+                    break;
+                case 3:
+                    work_type.setImageResource(R.drawable.dop_k_small);
 
-                        break;
-                    case 6:
-                        work_type.setImageResource(R.drawable.dopust_small);
+                    break;
+                case 4:
+                    work_type.setImageResource(R.drawable.pop_k_small);
 
-                        break;
+                    break;
+                case 5:
+                    work_type.setImageResource(R.drawable.prosto_small);
 
-                }
+                    break;
+                case 6:
+                    work_type.setImageResource(R.drawable.dopust_small);
+
+                    break;
 
             }
 
+        }
 
+        // This day hasnt been added to the database or an error occurred. Display an empty image
+        else {
+            work_type.setImageDrawable(null);
+        }
 
 
         // Close the cursor.
-       if(!cursor.isClosed() ) cursor.close();
+        if (!cursor.isClosed()) cursor.close();
         MyDataBaseHelper.dbHelper.close();
         //Return the View to the Listview.
         return v;
     }
-
-
-
 
 
 }

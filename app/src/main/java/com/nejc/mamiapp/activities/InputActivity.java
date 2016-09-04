@@ -26,23 +26,21 @@ import android.widget.Toast;
 import com.nejc.mamiapp.R;
 import com.nejc.mamiapp.fragments_and_adapters.ChooserFragment;
 import com.nejc.mamiapp.fragments_and_adapters.ViewPagerAdapter;
+import com.nejc.mamiapp.helpers.DataBaseHelper;
 import com.nejc.mamiapp.helpers.InterFragmentInterface;
 
 
 /***********
  * REVISION HISTORY *****************
  * 10/07/2016: Added some comments
- * <p/>
+ *
  * 21/08/2016:
  * + Resconstruction and simplification of the old Activity version.
- * <p/>
- * <p/>
- * <p/>
- * <p/>
- * /
+ *
+ *
  ***********************************************/
 
-// TODO: Activity should implement a communication interface which manipulates the chooser fragment
+
 public class InputActivity extends AppCompatActivity implements InterFragmentInterface {
 
 
@@ -52,9 +50,12 @@ public class InputActivity extends AppCompatActivity implements InterFragmentInt
     android.app.FragmentManager manager;
 
     // XML Widgets
-    ViewPager pager = null;
-    ChooserFragment fragmentToAdd = null;
-
+    ViewPager pager ;
+    ViewPagerAdapter adapter ;
+    ChooserFragment fragmentToAdd ;
+    int selectedDay;
+    int selectedMonth;
+    int selectedYear;
     @Override
     // Initializes all the GUI components
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,16 +67,17 @@ public class InputActivity extends AppCompatActivity implements InterFragmentInt
         // App context and preference file
         context = getApplicationContext();
         pref = context.getSharedPreferences("Constants", context.MODE_PRIVATE);
-        fragmentToAdd =  new ChooserFragment();
+        fragmentToAdd = new ChooserFragment();
         // All GUI objects
         pager = (ViewPager) findViewById(R.id.pager);
 
 
         // ************ ViewPager initialization *******************//
 
-        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+        adapter = new ViewPagerAdapter(getSupportFragmentManager());
         pager.setAdapter(adapter);
-        pager.setOffscreenPageLimit(2);
+        pager.setOffscreenPageLimit(1);
+
         // *********************************************************//
         //startService(intent);
 
@@ -129,8 +131,10 @@ public class InputActivity extends AppCompatActivity implements InterFragmentInt
     // This method is called from within the fragment that is populating the viewPager
     @Override
     public void onListItemClicked(int date, int month, int year) {
+        this.selectedDay=date;
+        this.selectedMonth=month;
+        this.selectedYear=year;
         // Get the fragment manager
-
         // - If the fragment layout exists, show the fragment
         //   and add animation to it.
         // - Also report the selected date to the fragment
@@ -139,10 +143,10 @@ public class InputActivity extends AppCompatActivity implements InterFragmentInt
             transaction.setCustomAnimations(R.animator.translate_vertical_up, R.animator.translate_vertical_up);
             transaction.add(R.id.linearlayout_week_activity, fragmentToAdd);
             transaction.commit();
-            fragmentToAdd.setSelectedDate(date,month,year);
-
+            fragmentToAdd.setSelectedDate(date, month, year);
+            Toast.makeText(getApplicationContext(), "Item " + Integer.toString(date) + "." + Integer.toString(month) + "." + Integer.toString(year) + " has been clicked", Toast.LENGTH_SHORT).show();
         }
-        Toast.makeText(getApplicationContext(),"Item " + Integer.toString(date)+"."+Integer.toString(month)+"."+Integer.toString(year)+ " has been clicked",Toast.LENGTH_SHORT).show();
+
     }
 
     // This method is called from the Fragment that represents the pop-up message
@@ -155,7 +159,11 @@ public class InputActivity extends AppCompatActivity implements InterFragmentInt
         transaction.remove(fragmentToAdd);
         transaction.commit();
         // Update Listview with the newly selected item
-
+        DataBaseHelper helper = new DataBaseHelper(this);
+        helper.updateRow(this.selectedDay, this.selectedMonth, this.selectedYear, itemSelected);
+        // Call viewpager-adapter method that notifies the view representing days in the view hierarchy
+        helper.close();
+        adapter.notifyFragment(pager.getCurrentItem());
     }
     //******************************************************************************************//
 }// End of Activity

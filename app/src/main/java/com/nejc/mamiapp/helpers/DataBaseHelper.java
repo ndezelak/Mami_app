@@ -3,16 +3,17 @@ package com.nejc.mamiapp.helpers;/***********
  * <p/>
  * Description:
  * Helper Class used for restoring the Workdays database used once by the app
-
-
-/*********** REVISION HISTORY *****************
- *
+ * <p/>
+ * <p/>
+ * /*********** REVISION HISTORY *****************
+ * <p/>
  * 30.8.2016:
- *  - Added custom methods to the class (updateRow, readRow)
- *
- *
- *
- /***********************************************/
+ * - Added custom methods to the class (updateRow, readRow)
+ * <p/>
+ * <p/>
+ * <p/>
+ * /
+ ***********************************************/
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -22,6 +23,7 @@ import java.io.OutputStream;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
@@ -56,6 +58,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     public DataBaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
         this.context = context;
+        openDataBase();
 
     }
 
@@ -145,47 +148,56 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
 
         // Check if the given row already exists
-        if (readRow(day, month, year) == 0) {
-            values.put("day",Integer.toString(day));
+        if (readRow(day, month, year) < 0) {
+            values.put("day", Integer.toString(day));
             values.put("month", Integer.toString(month));
             values.put("year", Integer.toString(year));
             values.put("type", Integer.toString(value));
+           long result=sqliteDataBase.insert(TABLE_NAME, null, values);
             // use insert
-            if( sqliteDataBase.insert(TABLE_NAME,null,values) == -1){
+            if (sqliteDataBase.insert(TABLE_NAME, null, values) == -1) {
                 return 0;
-            }
-            else{
+            } else {
                 return 1;
             }
         } else {
             //use update
             values.put("type", Integer.toString(value));
             String clause = "day=? AND month=? AND year=?";
-            String [] args={Integer.toString(day), Integer.toString(month),  Integer.toString(year) } ;
-            sqliteDataBase.update(TABLE_NAME,values,clause,args);
+            String[] args = {Integer.toString(day), Integer.toString(month), Integer.toString(year)};
+            int res=sqliteDataBase.update(TABLE_NAME, values, clause, args);
             return 1;
         }
     }
-    // TODO: Finish this method!
-    public int updateRows(int month, int year, int value){
 
+    // TODO: Finish this method!
+    public int updateRows(int month, int year, int value) {
 
 
         return 0;
     }
+
     // Read a particular item
     public int readRow(int day, int month, int year) {
         String[] columns = {"type"};
         String selection = "day=? AND month=? AND year=?";
         String[] selectionArgs = {Integer.toString(day), Integer.toString(month), Integer.toString(year)};
-        Cursor cursor = sqliteDataBase.query(DATABASE_NAME, columns, selection, selectionArgs, null, null, null, null);
+        Cursor cursor = sqliteDataBase.query(TABLE_NAME, null, selection, selectionArgs, null, null, null, null);
         int length = cursor.getCount();
         if (length > 1) {
-            return -1;
+            return -2;
         } else if (length == 0) {
-            return 0;
+            return -1;
         } else {
-            return cursor.getInt(3);
+            int col_count = cursor.getColumnCount();
+            int index = cursor.getColumnIndex("type");
+
+            if( cursor != null && cursor.moveToFirst()) {
+                return cursor.getInt(index);
+            }
+            else{
+              return -1;
+            }
         }
     }
 
