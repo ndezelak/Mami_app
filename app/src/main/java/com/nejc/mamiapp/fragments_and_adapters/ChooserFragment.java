@@ -12,10 +12,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.GridLayout;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.ListAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.nejc.mamiapp.R;
 import com.nejc.mamiapp.helpers.DataBaseHelper;
@@ -26,7 +29,7 @@ import java.util.ArrayList;
 /**
  * Fragment used for displaying (and hiding) the item chooser dialog inside the InputActivity
  */
-public class ChooserFragment extends Fragment implements View.OnClickListener{
+public class ChooserFragment extends Fragment {
     Context mContext;
     InterFragmentInterface commInterface;
 
@@ -50,16 +53,45 @@ public class ChooserFragment extends Fragment implements View.OnClickListener{
     // Return View representing the fragment
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
         // Here you should initialize the fragment layout and return it
         View layout = inflater.inflate(R.layout.fragment_chooser, container, false);
-        dop_kuh = (ImageView) layout.findViewById(R.id.dop_kuh_big);
-        pop_kuh = (ImageView) layout.findViewById(R.id.pop_kuh_big);
-        dop_sank = (ImageView) layout.findViewById(R.id.dop_sank_big);
-        pop_sank = (ImageView) layout.findViewById(R.id.pop_sank_big);
-        prosto = (ImageView) layout.findViewById(R.id.prosto_big);
-        dopust = (ImageView) layout.findViewById(R.id.dopust_big);
 
+        GridView grid = (GridView) layout.findViewById(R.id.chooser_grid);
+        int[] refArray={R.drawable.dop_sank_big,R.drawable.dop_k_big, R.drawable.pop_sank_big,
+                        R.drawable.pop_k_big, R.drawable.dopust_big,  R.drawable.prosto_big  };
+        GridViewChooserAdapter gridAdapter = new GridViewChooserAdapter(refArray);
+        grid.setAdapter(gridAdapter);
+
+        grid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+               int item;
+                switch (position) {
+                    case 0:
+                        item=1;
+                        break;
+                    case 1:
+                        item=3;
+                        break;
+                    case 2:
+                        item=2;
+                        break;
+                    case 3:
+                        item=4;
+                        break;
+                    case 4:
+                        item=6;
+                        break;
+                    case 5:
+                        item=5;
+                        break;
+                    default:
+                        item=0;
+                }
+                commInterface.onHideChooser(item);
+            }
+        });
         return layout;
 
     }
@@ -77,30 +109,4 @@ public class ChooserFragment extends Fragment implements View.OnClickListener{
         this.year=year;
     }
 
-
-    @Override
-    public void onClick(View v) {
-        DataBaseHelper dbHelper = new DataBaseHelper(getActivity().getApplicationContext());
-        dbHelper.openDataBase();
-        switch(v.getId()){
-            case R.id.dop_kuh_big:
-                dbHelper.updateRow(day,month,year,3);
-                break;
-            case R.id.pop_kuh_big:
-                dbHelper.updateRow(day,month,year,4);
-                break;
-            case R.id.dop_sank_big:
-                dbHelper.updateRow(day,month,year,1);
-                break;
-            case R.id.pop_sank_big:
-                dbHelper.updateRow(day,month,year,2);
-                break;
-            case R.id.prosto_big:
-                dbHelper.updateRow(day,month,year,5);
-                break;
-            case R.id.dopust_big:
-                dbHelper.updateRow(day,month,year,6);
-                break;
-        }
-    }
 }
