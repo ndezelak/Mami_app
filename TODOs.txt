@@ -1,0 +1,4 @@
+#1 : Bugfix - adding and changing entries to the database
+#2 : Bugfix - display current month when opening the app
+#3 : Simplify and document app structure
+#4 : Implement the statistics feature

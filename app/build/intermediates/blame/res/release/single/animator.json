@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\animator\\translate_vertical_down.xml",
+        "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\src\\main\\res\\animator\\translate_vertical_down.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\animator\\translate_vertical_up.xml",
+        "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\src\\main\\res\\animator\\translate_vertical_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\animator\\show.xml",
+        "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\src\\main\\res\\animator\\show.xml"
+    }
+]

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nejc.mamiapp2.debug"
+    android:installLocation="preferExternal"
+    android:versionCode="1"
+    android:versionName="1.1-DEBUG" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="23" />
+
+    <!-- declaring the permission for using phones vibrator -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!--
+     comment  on Shared User IDs.
+      It is used by linux to identify processes. If you want to have two app version
+      that use the same database, you should give both versions same user ID.
+    -->
+    <!--
+       Note that you can support different screen sizes and densities with putting different layouts
+        with the same name into folders_hdpi/xhdpi ...
+    -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="MamiApp-TEST"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        <activity android:name="com.nejc.mamiapp.activities.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.nejc.mamiapp.activities.InputActivity" />
+        <activity android:name="com.nejc.mamiapp.activities.OverviewActivity" />
+    </application>
+
+</manifest>

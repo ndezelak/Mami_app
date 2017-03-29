@@ -1,0 +1,49 @@
+// Use gradle plugin to compile this module as an
+// android project.
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        Signing {
+            keyAlias 'NewKey'
+            keyPassword 'mypassword1'
+            storeFile file('C:/Users/Nejc/KeyStore')
+            storePassword 'mypassword'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+    defaultConfig {
+        applicationId 'com.nejc.mamiapp2'
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.1"
+    }
+    // Here you can define multiple build types
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //signingConfig signingConfigs.Signing
+            manifestPlaceholders = [appName: "MamiApp"]
+            signingConfig signingConfigs.Signing
+        }
+        debug {
+            applicationIdSuffix '.debug'
+            versionNameSuffix '-DEBUG'
+            manifestPlaceholders = [appName: "MamiApp-TEST"]
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:design:23.1.0'
+    compile 'com.android.support:gridlayout-v7:23.1.0'
+    compile 'com.android.support:appcompat-v7:23.1.0'
+
+}
