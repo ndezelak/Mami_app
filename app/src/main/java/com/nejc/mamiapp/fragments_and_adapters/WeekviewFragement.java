@@ -67,7 +67,7 @@ public class WeekviewFragement extends android.support.v4.app.Fragment {
         ImageView month_title = (ImageView) listviewLayout.findViewById(R.id.month_title);
         ImageView year_title = (ImageView) listviewLayout.findViewById(R.id.year_title);
 
-        // Attach adapters to the listviews
+
 
         // Set month image
         switch (month) {
@@ -139,9 +139,9 @@ public class WeekviewFragement extends android.support.v4.app.Fragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         commInterface = (InterFragmentInterface) getActivity();
-
-        adapter_listview_left = new WeekDaysAdapter(getActivity().getApplicationContext(), false, month, year, commInterface);
-        adapter_listview_right = new WeekDaysAdapter(getActivity().getApplicationContext(), true, month, year, commInterface);
+        // Attach adapters to the listviews - has to be done here as apperently the adapter content is copied
+        adapter_listview_left = new WeekDaysAdapter(getActivity().getApplicationContext(), false, this.month, this.year, commInterface);
+        adapter_listview_right = new WeekDaysAdapter(getActivity().getApplicationContext(), true, this.month, this.year, commInterface);
         listview_left.setAdapter(adapter_listview_left);
         listview_right.setAdapter(adapter_listview_right);
     }

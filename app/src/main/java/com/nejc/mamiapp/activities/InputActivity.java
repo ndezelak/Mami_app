@@ -21,6 +21,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.nejc.mamiapp.BuildConfig;
 import com.nejc.mamiapp.R;
 import com.nejc.mamiapp.fragments_and_adapters.ChooserFragment;
 import com.nejc.mamiapp.fragments_and_adapters.ViewPagerAdapter;
@@ -81,9 +82,12 @@ public class InputActivity extends AppCompatActivity implements InterFragmentInt
         pager.setAdapter(adapter);
         // Setting for how many pages are loaded before and after the current page
         pager.setOffscreenPageLimit(1);
-        // TODO: Here you should calculate the right item offset
+
         GregorianCalendar calendar = new GregorianCalendar();
-        pager.setCurrentItem(calendar.get(GregorianCalendar.MONTH));
+        // Set start page position
+        int result = calendar.get(GregorianCalendar.MONTH) + (calendar.get(GregorianCalendar.YEAR) - 2016) * 12;
+        pager.setCurrentItem(result);
+
 
         // *********************************************************//
         //startService(intent);
@@ -152,7 +156,9 @@ public class InputActivity extends AppCompatActivity implements InterFragmentInt
             transaction.add(R.id.activity_week, fragmentToAdd);
             transaction.commit();
             fragmentToAdd.setSelectedDate(date, month, year);
-            Toast.makeText(getApplicationContext(), "Item " + Integer.toString(date) + "." + Integer.toString(month) + "." + Integer.toString(year) + " has been clicked", Toast.LENGTH_SHORT).show();
+            if (BuildConfig.DEBUG) {
+                Toast.makeText(getApplicationContext(), "Item " + Integer.toString(date) + "." + Integer.toString(month) + "." + Integer.toString(year) + " has been clicked", Toast.LENGTH_SHORT).show();
+            }
         }
     }
 

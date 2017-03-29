@@ -32,12 +32,12 @@
         "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\drawable-mdpi\\abc_list_focused_holo.9.png"
     },
     {
-        "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi\\y2017.png",
-        "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\src\\main\\res\\drawable-mdpi\\y2017.png"
-    },
-    {
         "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi\\dopust_small.png",
         "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\src\\main\\res\\drawable-mdpi\\dopust_small.png"
+    },
+    {
+        "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi\\y2017.png",
+        "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\src\\main\\res\\drawable-mdpi\\y2017.png"
     },
     {
         "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi\\pop_k_small.png",
@@ -92,12 +92,12 @@
         "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\src\\main\\res\\drawable-mdpi\\julij.png"
     },
     {
-        "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi\\oktober.png",
-        "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\src\\main\\res\\drawable-mdpi\\oktober.png"
-    },
-    {
         "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi\\abc_textfield_activated_mtrl_alpha.9.png",
         "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\drawable-mdpi\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi\\oktober.png",
+        "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\src\\main\\res\\drawable-mdpi\\oktober.png"
     },
     {
         "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi\\y2020.png",
@@ -160,12 +160,12 @@
         "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\src\\main\\res\\drawable-mdpi\\y2019.png"
     },
     {
-        "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi\\abc_ic_commit_search_api_mtrl_alpha.png",
-        "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\drawable-mdpi\\abc_ic_commit_search_api_mtrl_alpha.png"
-    },
-    {
         "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi\\s.png",
         "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\src\\main\\res\\drawable-mdpi\\s.png"
+    },
+    {
+        "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi\\abc_ic_commit_search_api_mtrl_alpha.png",
+        "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\drawable-mdpi\\abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi\\abc_scrubber_primary_mtrl_alpha.9.png",

@@ -16,8 +16,10 @@ import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,6 +30,7 @@ import com.nejc.mamiapp.R;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+
 
 /*********** REVISION HISTORY *****************
  *      10/07/2016: Added the class description.
@@ -42,38 +45,34 @@ import java.util.GregorianCalendar;
  *                  + Current data can be reported to the main activity via the custom interfragment interface
  *       04/09/2016:
  *                  + Bugfix: Nonexistend database item is displayed as empty
+ *       29/03/2017:
+ *                  - Changed GregorianCalendar initialization - set methods for month did not function well - february was 31 days long
  /***********************************************/
 public class WeekDaysAdapter extends BaseAdapter {
-
-
     Context context;
-
     private int length;
-    private int Position;
+    private int day;
     private int month;
     private int year;
     private boolean side;
-    GregorianCalendar calendar;
+    Calendar calendar;
     private int numItems;
     InterFragmentInterface commInterface;
-
 
     public WeekDaysAdapter(Context context, boolean side, int month, int year, InterFragmentInterface commInterface) {
         super();
         this.commInterface = commInterface;
         this.context = context;
         this.side = side;
-        Position = 0;
+        this.day = 1;
         this.month = month;
         this.year = year;
         // Set the calendar and length of the month
-        calendar = new GregorianCalendar();
-        calendar.set(Calendar.MONTH, month);
-        calendar.set(GregorianCalendar.YEAR, year);
-        this.length = calendar.getActualMaximum(calendar.DAY_OF_MONTH);
+        calendar = new GregorianCalendar(year,month,1);
+        //calendar.set(GregorianCalendar.MONTH, GregorianCalendar.FEBRUARY);
+        //calendar.set(GregorianCalendar.YEAR, year);
+        this.length = calendar.getActualMaximum(GregorianCalendar.DAY_OF_MONTH);
     }
-
-
     // This method is used by the Listview to determine the number of rows it will have to display.
     @Override
     public int getCount() {
@@ -108,22 +107,21 @@ public class WeekDaysAdapter extends BaseAdapter {
         if (side) {
             position = position + 16;
         }
-        final int mposition = position;
+
         // Set the calendar day
         calendar.set(Calendar.DATE, position + 1);
 
         //Open the database, you need it to retrieve saved data for a particular day
         //SQLiteDatabase sqLiteDatabase=context.openOrCreateDatabase("Workdays", context.MODE_PRIVATE, null);
 
-
         //Generate a layout for the listview row
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
         View v = inflater.inflate(R.layout.listview_row, null);
-
+        v.setTag(position);
         v.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                commInterface.onListItemClicked(mposition + 1, month + 1, year);
+                commInterface.onListItemClicked((int)v.getTag()+1,month+1,year);
             }
         });
 

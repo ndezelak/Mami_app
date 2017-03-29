@@ -11251,11 +11251,11 @@ com.nejc.mamiapp.fragments_and_adapters.ViewPagerAdapter -> com.nejc.mamiapp.a.c
 com.nejc.mamiapp.fragments_and_adapters.WeekDaysAdapter -> com.nejc.mamiapp.a.d:
     android.content.Context context -> a
     int length -> d
-    int Position -> e
+    int day -> e
     int month -> f
     int year -> g
     boolean side -> h
-    java.util.GregorianCalendar calendar -> b
+    java.util.Calendar calendar -> b
     int numItems -> i
     com.nejc.mamiapp.helpers.InterFragmentInterface commInterface -> c
     void <init>(android.content.Context,boolean,int,int,com.nejc.mamiapp.helpers.InterFragmentInterface) -> <init>
@@ -11266,9 +11266,8 @@ com.nejc.mamiapp.fragments_and_adapters.WeekDaysAdapter -> com.nejc.mamiapp.a.d:
     int access$000(com.nejc.mamiapp.fragments_and_adapters.WeekDaysAdapter) -> a
     int access$100(com.nejc.mamiapp.fragments_and_adapters.WeekDaysAdapter) -> b
 com.nejc.mamiapp.fragments_and_adapters.WeekDaysAdapter$1 -> com.nejc.mamiapp.a.d$1:
-    int val$mposition -> a
-    com.nejc.mamiapp.fragments_and_adapters.WeekDaysAdapter this$0 -> b
-    void <init>(com.nejc.mamiapp.fragments_and_adapters.WeekDaysAdapter,int) -> <init>
+    com.nejc.mamiapp.fragments_and_adapters.WeekDaysAdapter this$0 -> a
+    void <init>(com.nejc.mamiapp.fragments_and_adapters.WeekDaysAdapter) -> <init>
     void onClick(android.view.View) -> onClick
 com.nejc.mamiapp.fragments_and_adapters.WeekviewFragement -> com.nejc.mamiapp.a.e:
     int month -> ab
@@ -11291,8 +11290,9 @@ com.nejc.mamiapp.helpers.DataBaseHelper -> com.nejc.mamiapp.b.a:
     void <init>(android.content.Context) -> <init>
     void createDataBase() -> a
     boolean checkDataBase() -> b
-    void copyDataBase() -> d
+    void copyDataBase() -> e
     void openDataBase() -> c
+    android.database.sqlite.SQLiteDatabase getDB() -> d
     void close() -> close
     int updateRow(int,int,int,int) -> a
     int readRow(int,int,int) -> a

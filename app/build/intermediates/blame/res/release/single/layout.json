@@ -44,12 +44,12 @@
         "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\layout\\abc_screen_content_include.xml"
     },
     {
-        "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_radio.xml",
-        "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\layout\\abc_list_menu_item_radio.xml"
-    },
-    {
         "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\layout\\listview_row.xml",
         "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\src\\main\\res\\layout\\listview_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_radio.xml",
+        "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\layout\\abc_list_menu_item_radio.xml"
     },
     {
         "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\layout\\design_navigation_item_subheader.xml",
@@ -60,12 +60,12 @@
         "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
-        "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_bar_view_list_nav_layout.xml",
-        "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
-    },
-    {
         "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_mode_bar.xml",
         "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
     },
     {
         "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_icon.xml",
