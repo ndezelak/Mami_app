@@ -25,6 +25,7 @@ public class GridViewChooserAdapter extends BaseAdapter {
    // References to your images
     int[] listImages;
 
+    // Class constructor that saves reference to the images that have to be displayed
     GridViewChooserAdapter (int[] listImages){
         this.listImages=listImages;
     }
@@ -46,6 +47,7 @@ public class GridViewChooserAdapter extends BaseAdapter {
         return 0;
     }
 
+    // Return element as an ImageView
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         ImageView option=new ImageView(parent.getContext());

@@ -89,12 +89,11 @@ public class WeekDaysAdapter extends BaseAdapter {
     }
 
 
-    // Not important
+    // Not important but has to be implemented
     @Override
     public Object getItem(int position) {
         return null;
     }
-
 
     @Override
     public long getItemId(int position) {

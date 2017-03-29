@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
             Log.d(DATABASE_LOG, "Error while creating a database: " + e.getMessage());
         }
 
-        // GUI Elements initialization
+        // GUI Elements initialization (only two buttons that create an intent to start another activity)
         Button weekButton = (Button) findViewById(R.id.Button_week);
         Button monthButton = (Button) findViewById(R.id.Button_month);
 
@@ -67,8 +67,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
         monthButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -78,6 +76,5 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-
 
 }

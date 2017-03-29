@@ -8,7 +8,6 @@ package com.nejc.mamiapp.fragments_and_adapters;
       *  that inter fragment communication is possible.
       *
 */
-
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -17,10 +16,8 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
-
 import com.nejc.mamiapp.R;
 import com.nejc.mamiapp.helpers.InterFragmentInterface;
-
 import java.util.Calendar;
 
 /***********
@@ -53,7 +50,7 @@ public class WeekviewFragement extends android.support.v4.app.Fragment {
     }
 
     // Attach layout to the week overview Fragment instance
-    public void attach_layout(int month, int year) {
+    public void setMonthYear(int month, int year) {
         this.month = month;
         this.year = year;
     }
@@ -71,8 +68,6 @@ public class WeekviewFragement extends android.support.v4.app.Fragment {
         ImageView year_title = (ImageView) listviewLayout.findViewById(R.id.year_title);
 
         // Attach adapters to the listviews
-
-
 
         // Set month image
         switch (month) {

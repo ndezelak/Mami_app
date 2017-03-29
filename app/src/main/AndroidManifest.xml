@@ -10,8 +10,8 @@
 
     <!--
      comment  on Shared User IDs.
-      It is used by linux to identify processes. If you want to have an app version
-      that uses the same database, you should give both versions same user ID.
+      It is used by linux to identify processes. If you want to have two app version
+      that use the same database, you should give both versions same user ID.
     -->
     <!--
        Note that you can support different screen sizes and densities with putting different layouts
@@ -24,20 +24,16 @@
         android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-
         <activity android:name=".activities.MainActivity">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
         </activity>
-
         <activity
             android:name=".activities.InputActivity" />
-
         <activity
             android:name=".activities.OverviewActivity" />
-
     </application>
 
 </manifest>
