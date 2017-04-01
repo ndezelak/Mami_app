@@ -58,10 +58,10 @@ activity#com.nejc.mamiapp.activities.InputActivity
 ADDED from C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\src\main\AndroidManifest.xml:33:9-34:56
 	android:name
 		ADDED from C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\src\main\AndroidManifest.xml:34:13-53
-activity#com.nejc.mamiapp.activities.OverviewActivity
-ADDED from C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\src\main\AndroidManifest.xml:35:9-36:59
+activity#com.nejc.mamiapp.activities.StatisticsActivity
+ADDED from C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\src\main\AndroidManifest.xml:35:9-36:61
 	android:name
-		ADDED from C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\src\main\AndroidManifest.xml:36:13-56
+		ADDED from C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\src\main\AndroidManifest.xml:36:13-58
 uses-sdk
 INJECTED from C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:23.1.0] C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\exploded-aar\com.android.support\design\23.1.0\AndroidManifest.xml:20:5-43

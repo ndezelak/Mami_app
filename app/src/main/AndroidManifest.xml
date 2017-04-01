@@ -33,7 +33,7 @@
         <activity
             android:name=".activities.InputActivity" />
         <activity
-            android:name=".activities.OverviewActivity" />
+            android:name=".activities.StatisticsActivity" />
     </application>
 
 </manifest>

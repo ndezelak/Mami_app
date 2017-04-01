@@ -60,6 +60,10 @@
         "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
+        "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\layout\\input_activity.xml",
+        "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\src\\main\\res\\layout\\input_activity.xml"
+    },
+    {
         "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_mode_bar.xml",
         "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\layout\\abc_action_mode_bar.xml"
     },
@@ -80,8 +84,16 @@
         "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\layout\\abc_search_view.xml"
     },
     {
+        "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\layout\\input_activity_fragment_month_listview_row.xml",
+        "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\src\\main\\res\\layout\\input_activity_fragment_month_listview_row.xml"
+    },
+    {
         "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_mode_close_item_material.xml",
         "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\layout\\input_activity_fragment_chooser_grid_item.xml",
+        "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\src\\main\\res\\layout\\input_activity_fragment_chooser_grid_item.xml"
     },
     {
         "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\layout\\design_layout_snackbar.xml",
@@ -156,6 +168,10 @@
         "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
     {
+        "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\layout\\main_activity.xml",
+        "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\src\\main\\res\\layout\\main_activity.xml"
+    },
+    {
         "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\layout\\month_input_fragment.xml",
         "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\src\\main\\res\\layout\\month_input_fragment.xml"
     },
@@ -166,6 +182,14 @@
     {
         "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_select_dialog_material.xml",
         "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\layout\\statistics_activity.xml",
+        "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\src\\main\\res\\layout\\statistics_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\layout\\input_activity_fragment_month.xml",
+        "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\src\\main\\res\\layout\\input_activity_fragment_month.xml"
     },
     {
         "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_home_screen.xml",
@@ -186,6 +210,10 @@
     {
         "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\layout\\design_menu_item_action_area.xml",
         "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.0\\res\\layout\\design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\layout\\input_activity_fragment_chooser.xml",
+        "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\src\\main\\res\\layout\\input_activity_fragment_chooser.xml"
     },
     {
         "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_bar_up_container.xml",

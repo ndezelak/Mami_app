@@ -7,28 +7,9 @@
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 55,
-                    "endColumn": 68,
-                    "endOffset": 119
-                },
-                "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 281,
-                        "endColumn": 68,
-                        "endOffset": 345
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 3,
-                    "startColumn": 4,
-                    "startOffset": 124,
-                    "endLine": 8,
+                    "endLine": 7,
                     "endColumn": 12,
-                    "endOffset": 420
+                    "endOffset": 351
                 },
                 "from": {
                     "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\src\\main\\res\\values-v21\\styles.xml",
@@ -44,20 +25,39 @@
             },
             {
                 "to": {
-                    "startLine": 9,
+                    "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 425,
+                    "startOffset": 356,
                     "endColumn": 90,
-                    "endOffset": 511
+                    "endOffset": 442
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 297,
+                        "startOffset": 55,
                         "endColumn": 90,
-                        "endOffset": 383
+                        "endOffset": 141
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 447,
+                    "endColumn": 102,
+                    "endOffset": 545
+                },
+                "from": {
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 146,
+                        "endColumn": 102,
+                        "endOffset": 244
                     }
                 }
             },
@@ -65,18 +65,18 @@
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 516,
+                    "startOffset": 550,
                     "endColumn": 102,
-                    "endOffset": 614
+                    "endOffset": 648
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 5,
+                        "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 388,
+                        "startOffset": 249,
                         "endColumn": 102,
-                        "endOffset": 486
+                        "endOffset": 347
                     }
                 }
             },
@@ -84,18 +84,18 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 619,
-                    "endColumn": 102,
-                    "endOffset": 717
+                    "startOffset": 653,
+                    "endColumn": 104,
+                    "endOffset": 753
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 6,
+                        "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 491,
-                        "endColumn": 102,
-                        "endOffset": 589
+                        "startOffset": 352,
+                        "endColumn": 104,
+                        "endOffset": 452
                     }
                 }
             },
@@ -103,18 +103,18 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 722,
-                    "endColumn": 104,
-                    "endOffset": 822
+                    "startOffset": 758,
+                    "endColumn": 106,
+                    "endOffset": 860
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 7,
+                        "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 594,
-                        "endColumn": 104,
-                        "endOffset": 694
+                        "startOffset": 457,
+                        "endColumn": 106,
+                        "endOffset": 559
                     }
                 }
             },
@@ -122,18 +122,18 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 827,
-                    "endColumn": 106,
-                    "endOffset": 929
+                    "startOffset": 865,
+                    "endColumn": 108,
+                    "endOffset": 969
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 8,
+                        "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 699,
-                        "endColumn": 106,
-                        "endOffset": 801
+                        "startOffset": 564,
+                        "endColumn": 108,
+                        "endOffset": 668
                     }
                 }
             },
@@ -141,18 +141,18 @@
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 934,
+                    "startOffset": 974,
                     "endColumn": 108,
-                    "endOffset": 1038
+                    "endOffset": 1078
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 9,
+                        "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 806,
+                        "startOffset": 673,
                         "endColumn": 108,
-                        "endOffset": 910
+                        "endOffset": 777
                     }
                 }
             },
@@ -160,18 +160,18 @@
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 1043,
+                    "startOffset": 1083,
                     "endColumn": 108,
-                    "endOffset": 1147
+                    "endOffset": 1187
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 10,
+                        "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 915,
+                        "startOffset": 782,
                         "endColumn": 108,
-                        "endOffset": 1019
+                        "endOffset": 886
                     }
                 }
             },
@@ -179,18 +179,18 @@
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 1152,
+                    "startOffset": 1192,
                     "endColumn": 108,
-                    "endOffset": 1256
+                    "endOffset": 1296
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 11,
+                        "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 1024,
+                        "startOffset": 891,
                         "endColumn": 108,
-                        "endOffset": 1128
+                        "endOffset": 995
                     }
                 }
             },
@@ -198,18 +198,18 @@
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 1261,
+                    "startOffset": 1301,
                     "endColumn": 108,
-                    "endOffset": 1365
+                    "endOffset": 1405
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 12,
+                        "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 1133,
+                        "startOffset": 1000,
                         "endColumn": 108,
-                        "endOffset": 1237
+                        "endOffset": 1104
                     }
                 }
             },
@@ -217,18 +217,18 @@
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 1370,
-                    "endColumn": 108,
-                    "endOffset": 1474
+                    "startOffset": 1410,
+                    "endColumn": 106,
+                    "endOffset": 1512
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 13,
+                        "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 1242,
-                        "endColumn": 108,
-                        "endOffset": 1346
+                        "startOffset": 1109,
+                        "endColumn": 106,
+                        "endOffset": 1211
                     }
                 }
             },
@@ -236,18 +236,18 @@
                 "to": {
                     "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 1479,
-                    "endColumn": 106,
-                    "endOffset": 1581
+                    "startOffset": 1517,
+                    "endColumn": 102,
+                    "endOffset": 1615
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 14,
+                        "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 1351,
-                        "endColumn": 106,
-                        "endOffset": 1453
+                        "startOffset": 1216,
+                        "endColumn": 102,
+                        "endOffset": 1314
                     }
                 }
             },
@@ -255,18 +255,18 @@
                 "to": {
                     "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 1586,
-                    "endColumn": 102,
-                    "endOffset": 1684
+                    "startOffset": 1620,
+                    "endColumn": 118,
+                    "endOffset": 1734
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 15,
+                        "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 1458,
-                        "endColumn": 102,
-                        "endOffset": 1556
+                        "startOffset": 1319,
+                        "endColumn": 118,
+                        "endOffset": 1433
                     }
                 }
             },
@@ -274,60 +274,60 @@
                 "to": {
                     "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 1689,
-                    "endColumn": 118,
-                    "endOffset": 1803
+                    "startOffset": 1739,
+                    "endLine": 22,
+                    "endColumn": 12,
+                    "endOffset": 1889
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 16,
+                        "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 1561,
-                        "endColumn": 118,
-                        "endOffset": 1675
+                        "startOffset": 1438,
+                        "endLine": 16,
+                        "endColumn": 12,
+                        "endOffset": 1588
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 22,
+                    "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 1808,
-                    "endLine": 23,
+                    "startOffset": 1894,
+                    "endLine": 24,
                     "endColumn": 12,
-                    "endOffset": 1958
+                    "endOffset": 2044
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1593,
+                        "endLine": 18,
+                        "endColumn": 12,
+                        "endOffset": 1743
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 2049,
+                    "endColumn": 104,
+                    "endOffset": 2149
+                },
+                "from": {
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
-                        "startOffset": 1917,
-                        "endLine": 20,
-                        "endColumn": 12,
-                        "endOffset": 2067
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 24,
-                    "startColumn": 4,
-                    "startOffset": 1963,
-                    "endLine": 25,
-                    "endColumn": 12,
-                    "endOffset": 2113
-                },
-                "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 21,
-                        "startColumn": 4,
-                        "startOffset": 2072,
-                        "endLine": 22,
-                        "endColumn": 12,
-                        "endOffset": 2222
+                        "startOffset": 1748,
+                        "endColumn": 104,
+                        "endOffset": 1848
                     }
                 }
             },
@@ -335,18 +335,18 @@
                 "to": {
                     "startLine": 26,
                     "startColumn": 4,
-                    "startOffset": 2118,
-                    "endColumn": 104,
-                    "endOffset": 2218
+                    "startOffset": 2154,
+                    "endColumn": 120,
+                    "endOffset": 2270
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 25,
+                        "startLine": 20,
                         "startColumn": 4,
-                        "startOffset": 2469,
-                        "endColumn": 104,
-                        "endOffset": 2569
+                        "startOffset": 1853,
+                        "endColumn": 120,
+                        "endOffset": 1969
                     }
                 }
             },
@@ -354,18 +354,18 @@
                 "to": {
                     "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 2223,
-                    "endColumn": 120,
-                    "endOffset": 2339
+                    "startOffset": 2275,
+                    "endColumn": 100,
+                    "endOffset": 2371
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 26,
+                        "startLine": 21,
                         "startColumn": 4,
-                        "startOffset": 2574,
-                        "endColumn": 120,
-                        "endOffset": 2690
+                        "startOffset": 1974,
+                        "endColumn": 100,
+                        "endOffset": 2070
                     }
                 }
             },
@@ -373,60 +373,60 @@
                 "to": {
                     "startLine": 28,
                     "startColumn": 4,
-                    "startOffset": 2344,
-                    "endColumn": 100,
-                    "endOffset": 2440
+                    "startOffset": 2376,
+                    "endLine": 29,
+                    "endColumn": 12,
+                    "endOffset": 2518
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 27,
+                        "startLine": 22,
                         "startColumn": 4,
-                        "startOffset": 2695,
-                        "endColumn": 100,
-                        "endOffset": 2791
+                        "startOffset": 2075,
+                        "endLine": 23,
+                        "endColumn": 12,
+                        "endOffset": 2217
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 29,
+                    "startLine": 30,
                     "startColumn": 4,
-                    "startOffset": 2445,
-                    "endLine": 30,
+                    "startOffset": 2523,
+                    "endLine": 31,
                     "endColumn": 12,
-                    "endOffset": 2587
+                    "endOffset": 2659
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 30,
+                        "startLine": 24,
                         "startColumn": 4,
-                        "startOffset": 3033,
-                        "endLine": 31,
+                        "startOffset": 2222,
+                        "endLine": 25,
                         "endColumn": 12,
-                        "endOffset": 3175
+                        "endOffset": 2358
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 31,
+                    "startLine": 32,
                     "startColumn": 4,
-                    "startOffset": 2592,
-                    "endLine": 32,
-                    "endColumn": 12,
-                    "endOffset": 2728
+                    "startOffset": 2664,
+                    "endColumn": 102,
+                    "endOffset": 2762
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 32,
+                        "startLine": 26,
                         "startColumn": 4,
-                        "startOffset": 3180,
-                        "endLine": 33,
-                        "endColumn": 12,
-                        "endOffset": 3316
+                        "startOffset": 2363,
+                        "endColumn": 102,
+                        "endOffset": 2461
                     }
                 }
             },
@@ -434,18 +434,18 @@
                 "to": {
                     "startLine": 33,
                     "startColumn": 4,
-                    "startOffset": 2733,
-                    "endColumn": 102,
-                    "endOffset": 2831
+                    "startOffset": 2767,
+                    "endColumn": 118,
+                    "endOffset": 2881
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 36,
+                        "startLine": 27,
                         "startColumn": 4,
-                        "startOffset": 3563,
-                        "endColumn": 102,
-                        "endOffset": 3661
+                        "startOffset": 2466,
+                        "endColumn": 118,
+                        "endOffset": 2580
                     }
                 }
             },
@@ -453,18 +453,18 @@
                 "to": {
                     "startLine": 34,
                     "startColumn": 4,
-                    "startOffset": 2836,
-                    "endColumn": 118,
-                    "endOffset": 2950
+                    "startOffset": 2886,
+                    "endColumn": 106,
+                    "endOffset": 2988
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 37,
+                        "startLine": 28,
                         "startColumn": 4,
-                        "startOffset": 3666,
-                        "endColumn": 118,
-                        "endOffset": 3780
+                        "startOffset": 2585,
+                        "endColumn": 106,
+                        "endOffset": 2687
                     }
                 }
             },
@@ -472,18 +472,18 @@
                 "to": {
                     "startLine": 35,
                     "startColumn": 4,
-                    "startOffset": 2955,
-                    "endColumn": 106,
-                    "endOffset": 3057
+                    "startOffset": 2993,
+                    "endColumn": 102,
+                    "endOffset": 3091
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 38,
+                        "startLine": 29,
                         "startColumn": 4,
-                        "startOffset": 3785,
-                        "endColumn": 106,
-                        "endOffset": 3887
+                        "startOffset": 2692,
+                        "endColumn": 102,
+                        "endOffset": 2790
                     }
                 }
             },
@@ -491,144 +491,144 @@
                 "to": {
                     "startLine": 36,
                     "startColumn": 4,
-                    "startOffset": 3062,
-                    "endColumn": 102,
-                    "endOffset": 3160
+                    "startOffset": 3096,
+                    "endLine": 37,
+                    "endColumn": 12,
+                    "endOffset": 3246
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 39,
+                        "startLine": 30,
                         "startColumn": 4,
-                        "startOffset": 3892,
-                        "endColumn": 102,
-                        "endOffset": 3990
+                        "startOffset": 2795,
+                        "endLine": 31,
+                        "endColumn": 12,
+                        "endOffset": 2945
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 37,
+                    "startLine": 38,
                     "startColumn": 4,
-                    "startOffset": 3165,
-                    "endLine": 38,
+                    "startOffset": 3251,
+                    "endLine": 39,
                     "endColumn": 12,
-                    "endOffset": 3307
+                    "endOffset": 3417
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 4,
+                        "startOffset": 2950,
+                        "endLine": 33,
+                        "endColumn": 12,
+                        "endOffset": 3116
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 40,
+                    "startColumn": 4,
+                    "startOffset": 3422,
+                    "endLine": 41,
+                    "endColumn": 12,
+                    "endOffset": 3566
+                },
+                "from": {
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 4,
+                        "startOffset": 3121,
+                        "endLine": 35,
+                        "endColumn": 12,
+                        "endOffset": 3265
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 3571,
+                    "endLine": 43,
+                    "endColumn": 12,
+                    "endOffset": 3731
+                },
+                "from": {
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 4,
+                        "startOffset": 3270,
+                        "endLine": 37,
+                        "endColumn": 12,
+                        "endOffset": 3430
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 44,
+                    "startColumn": 4,
+                    "startOffset": 3736,
+                    "endLine": 45,
+                    "endColumn": 12,
+                    "endOffset": 3888
+                },
+                "from": {
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 4,
+                        "startOffset": 3435,
+                        "endLine": 39,
+                        "endColumn": 12,
+                        "endOffset": 3587
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 46,
+                    "startColumn": 4,
+                    "startOffset": 3893,
+                    "endLine": 47,
+                    "endColumn": 12,
+                    "endOffset": 4039
+                },
+                "from": {
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 40,
+                        "startColumn": 4,
+                        "startOffset": 3592,
+                        "endLine": 41,
+                        "endColumn": 12,
+                        "endOffset": 3738
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 48,
+                    "startColumn": 4,
+                    "startOffset": 4044,
+                    "endColumn": 118,
+                    "endOffset": 4158
+                },
+                "from": {
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 42,
                         "startColumn": 4,
-                        "startOffset": 4232,
-                        "endLine": 43,
-                        "endColumn": 12,
-                        "endOffset": 4374
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 39,
-                    "startColumn": 4,
-                    "startOffset": 3312,
-                    "endLine": 40,
-                    "endColumn": 12,
-                    "endOffset": 3462
-                },
-                "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 44,
-                        "startColumn": 4,
-                        "startOffset": 4379,
-                        "endLine": 45,
-                        "endColumn": 12,
-                        "endOffset": 4529
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 41,
-                    "startColumn": 4,
-                    "startOffset": 3467,
-                    "endLine": 42,
-                    "endColumn": 12,
-                    "endOffset": 3633
-                },
-                "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 46,
-                        "startColumn": 4,
-                        "startOffset": 4534,
-                        "endLine": 47,
-                        "endColumn": 12,
-                        "endOffset": 4700
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 43,
-                    "startColumn": 4,
-                    "startOffset": 3638,
-                    "endLine": 44,
-                    "endColumn": 12,
-                    "endOffset": 3782
-                },
-                "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 48,
-                        "startColumn": 4,
-                        "startOffset": 4705,
-                        "endLine": 49,
-                        "endColumn": 12,
-                        "endOffset": 4849
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 45,
-                    "startColumn": 4,
-                    "startOffset": 3787,
-                    "endLine": 46,
-                    "endColumn": 12,
-                    "endOffset": 3947
-                },
-                "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 50,
-                        "startColumn": 4,
-                        "startOffset": 4854,
-                        "endLine": 51,
-                        "endColumn": 12,
-                        "endOffset": 5014
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 47,
-                    "startColumn": 4,
-                    "startOffset": 3952,
-                    "endLine": 48,
-                    "endColumn": 12,
-                    "endOffset": 4104
-                },
-                "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 52,
-                        "startColumn": 4,
-                        "startOffset": 5019,
-                        "endLine": 53,
-                        "endColumn": 12,
-                        "endOffset": 5171
+                        "startOffset": 3743,
+                        "endColumn": 118,
+                        "endOffset": 3857
                     }
                 }
             },
@@ -636,20 +636,20 @@
                 "to": {
                     "startLine": 49,
                     "startColumn": 4,
-                    "startOffset": 4109,
+                    "startOffset": 4163,
                     "endLine": 50,
                     "endColumn": 12,
-                    "endOffset": 4255
+                    "endOffset": 4307
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 54,
+                        "startLine": 43,
                         "startColumn": 4,
-                        "startOffset": 5176,
-                        "endLine": 55,
+                        "startOffset": 3862,
+                        "endLine": 44,
                         "endColumn": 12,
-                        "endOffset": 5322
+                        "endOffset": 4006
                     }
                 }
             },
@@ -657,39 +657,39 @@
                 "to": {
                     "startLine": 51,
                     "startColumn": 4,
-                    "startOffset": 4260,
-                    "endColumn": 118,
-                    "endOffset": 4374
+                    "startOffset": 4312,
+                    "endLine": 52,
+                    "endColumn": 12,
+                    "endOffset": 4456
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 58,
+                        "startLine": 45,
                         "startColumn": 4,
-                        "startOffset": 5569,
-                        "endColumn": 118,
-                        "endOffset": 5683
+                        "startOffset": 4011,
+                        "endLine": 46,
+                        "endColumn": 12,
+                        "endOffset": 4155
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 52,
+                    "startLine": 53,
                     "startColumn": 4,
-                    "startOffset": 4379,
-                    "endLine": 53,
-                    "endColumn": 12,
-                    "endOffset": 4523
+                    "startOffset": 4461,
+                    "endColumn": 111,
+                    "endOffset": 4568
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 61,
+                        "startLine": 47,
                         "startColumn": 4,
-                        "startOffset": 5925,
-                        "endLine": 62,
-                        "endColumn": 12,
-                        "endOffset": 6069
+                        "startOffset": 4160,
+                        "endColumn": 111,
+                        "endOffset": 4267
                     }
                 }
             },
@@ -697,39 +697,39 @@
                 "to": {
                     "startLine": 54,
                     "startColumn": 4,
-                    "startOffset": 4528,
-                    "endLine": 55,
-                    "endColumn": 12,
-                    "endOffset": 4672
+                    "startOffset": 4573,
+                    "endColumn": 146,
+                    "endOffset": 4715
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 63,
+                        "startLine": 48,
                         "startColumn": 4,
-                        "startOffset": 6074,
-                        "endLine": 64,
-                        "endColumn": 12,
-                        "endOffset": 6218
+                        "startOffset": 4272,
+                        "endColumn": 146,
+                        "endOffset": 4414
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 56,
+                    "startLine": 55,
                     "startColumn": 4,
-                    "startOffset": 4677,
-                    "endColumn": 111,
-                    "endOffset": 4784
+                    "startOffset": 4720,
+                    "endLine": 56,
+                    "endColumn": 12,
+                    "endOffset": 4868
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 67,
+                        "startLine": 49,
                         "startColumn": 4,
-                        "startOffset": 6465,
-                        "endColumn": 111,
-                        "endOffset": 6572
+                        "startOffset": 4419,
+                        "endLine": 50,
+                        "endColumn": 12,
+                        "endOffset": 4567
                     }
                 }
             },
@@ -737,39 +737,39 @@
                 "to": {
                     "startLine": 57,
                     "startColumn": 4,
-                    "startOffset": 4789,
-                    "endColumn": 146,
-                    "endOffset": 4931
+                    "startOffset": 4873,
+                    "endLine": 58,
+                    "endColumn": 12,
+                    "endOffset": 5015
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 70,
+                        "startLine": 51,
                         "startColumn": 4,
-                        "startOffset": 6814,
-                        "endColumn": 146,
-                        "endOffset": 6956
+                        "startOffset": 4572,
+                        "endLine": 52,
+                        "endColumn": 12,
+                        "endOffset": 4714
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 58,
+                    "startLine": 59,
                     "startColumn": 4,
-                    "startOffset": 4936,
-                    "endLine": 59,
-                    "endColumn": 12,
-                    "endOffset": 5084
+                    "startOffset": 5020,
+                    "endColumn": 74,
+                    "endOffset": 5090
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 71,
+                        "startLine": 53,
                         "startColumn": 4,
-                        "startOffset": 6961,
-                        "endLine": 72,
-                        "endColumn": 12,
-                        "endOffset": 7109
+                        "startOffset": 4719,
+                        "endColumn": 74,
+                        "endOffset": 4789
                     }
                 }
             },
@@ -777,20 +777,37 @@
                 "to": {
                     "startLine": 60,
                     "startColumn": 4,
-                    "startOffset": 5089,
-                    "endLine": 61,
-                    "endColumn": 12,
-                    "endOffset": 5231
+                    "startOffset": 5095,
+                    "endColumn": 88,
+                    "endOffset": 5179
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 73,
+                        "startLine": 54,
                         "startColumn": 4,
-                        "startOffset": 7114,
-                        "endLine": 74,
-                        "endColumn": 12,
-                        "endOffset": 7256
+                        "startOffset": 4794,
+                        "endColumn": 88,
+                        "endOffset": 4878
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 61,
+                    "startColumn": 4,
+                    "startOffset": 5184,
+                    "endColumn": 86,
+                    "endOffset": 5266
+                },
+                "from": {
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 55,
+                        "startColumn": 4,
+                        "startOffset": 4883,
+                        "endColumn": 86,
+                        "endOffset": 4965
                     }
                 }
             },
@@ -798,18 +815,18 @@
                 "to": {
                     "startLine": 62,
                     "startColumn": 4,
-                    "startOffset": 5236,
-                    "endColumn": 74,
-                    "endOffset": 5306
+                    "startOffset": 5271,
+                    "endColumn": 100,
+                    "endOffset": 5367
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 77,
+                        "startLine": 56,
                         "startColumn": 4,
-                        "startOffset": 7498,
-                        "endColumn": 74,
-                        "endOffset": 7568
+                        "startOffset": 4970,
+                        "endColumn": 100,
+                        "endOffset": 5066
                     }
                 }
             },
@@ -817,119 +834,125 @@
                 "to": {
                     "startLine": 63,
                     "startColumn": 4,
-                    "startOffset": 5311,
-                    "endColumn": 88,
-                    "endOffset": 5395
-                },
-                "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 78,
-                        "startColumn": 4,
-                        "startOffset": 7573,
-                        "endColumn": 88,
-                        "endOffset": 7657
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 64,
-                    "startColumn": 4,
-                    "startOffset": 5400,
-                    "endColumn": 86,
-                    "endOffset": 5482
-                },
-                "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 79,
-                        "startColumn": 4,
-                        "startOffset": 7662,
-                        "endColumn": 86,
-                        "endOffset": 7744
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 65,
-                    "startColumn": 4,
-                    "startOffset": 5487,
-                    "endColumn": 100,
-                    "endOffset": 5583
-                },
-                "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 80,
-                        "startColumn": 4,
-                        "startOffset": 7749,
-                        "endColumn": 100,
-                        "endOffset": 7845
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 66,
-                    "startColumn": 4,
-                    "startOffset": 5588,
-                    "endLine": 111,
+                    "startOffset": 5372,
+                    "endLine": 106,
                     "endColumn": 12,
-                    "endOffset": 8825
+                    "endOffset": 8435
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 81,
+                        "startLine": 57,
                         "startColumn": 4,
-                        "startOffset": 7850,
-                        "endLine": 126,
+                        "startOffset": 5071,
+                        "endLine": 100,
                         "endColumn": 12,
-                        "endOffset": 11087
+                        "endOffset": 8134
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 112,
+                    "startLine": 107,
                     "startColumn": 4,
-                    "startOffset": 8830,
-                    "endLine": 114,
+                    "startOffset": 8440,
+                    "endLine": 109,
                     "endColumn": 12,
-                    "endOffset": 9011
+                    "endOffset": 8621
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 127,
+                        "startLine": 101,
                         "startColumn": 4,
-                        "startOffset": 11092,
-                        "endLine": 129,
+                        "startOffset": 8139,
+                        "endLine": 103,
                         "endColumn": 12,
-                        "endOffset": 11273
+                        "endOffset": 8320
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 115,
+                    "startLine": 110,
                     "startColumn": 4,
-                    "startOffset": 9016,
+                    "startOffset": 8626,
+                    "endLine": 153,
+                    "endColumn": 12,
+                    "endOffset": 11701
+                },
+                "from": {
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 104,
+                        "startColumn": 4,
+                        "startOffset": 8325,
+                        "endLine": 147,
+                        "endColumn": 12,
+                        "endOffset": 11400
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 154,
+                    "startColumn": 4,
+                    "startOffset": 11706,
+                    "endLine": 156,
+                    "endColumn": 12,
+                    "endOffset": 11899
+                },
+                "from": {
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 148,
+                        "startColumn": 4,
+                        "startOffset": 11405,
+                        "endLine": 150,
+                        "endColumn": 12,
+                        "endOffset": 11598
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 157,
+                    "startColumn": 4,
+                    "startOffset": 11904,
+                    "endLine": 158,
+                    "endColumn": 12,
+                    "endOffset": 12022
+                },
+                "from": {
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 151,
+                        "startColumn": 4,
+                        "startOffset": 11603,
+                        "endLine": 152,
+                        "endColumn": 12,
+                        "endOffset": 11721
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 159,
+                    "startColumn": 4,
+                    "startOffset": 12027,
                     "endLine": 160,
                     "endColumn": 12,
-                    "endOffset": 12265
+                    "endOffset": 12145
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 130,
+                        "startLine": 153,
                         "startColumn": 4,
-                        "startOffset": 11278,
-                        "endLine": 175,
+                        "startOffset": 11726,
+                        "endLine": 154,
                         "endColumn": 12,
-                        "endOffset": 14527
+                        "endOffset": 11844
                     }
                 }
             },
@@ -937,41 +960,41 @@
                 "to": {
                     "startLine": 161,
                     "startColumn": 4,
-                    "startOffset": 12270,
-                    "endLine": 163,
+                    "startOffset": 12150,
+                    "endLine": 162,
                     "endColumn": 12,
-                    "endOffset": 12463
+                    "endOffset": 12258
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 176,
+                        "startLine": 155,
                         "startColumn": 4,
-                        "startOffset": 14532,
-                        "endLine": 178,
+                        "startOffset": 11849,
+                        "endLine": 156,
                         "endColumn": 12,
-                        "endOffset": 14725
+                        "endOffset": 11957
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 164,
+                    "startLine": 163,
                     "startColumn": 4,
-                    "startOffset": 12468,
+                    "startOffset": 12263,
                     "endLine": 165,
                     "endColumn": 12,
-                    "endOffset": 12586
+                    "endOffset": 12441
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 181,
+                        "startLine": 157,
                         "startColumn": 4,
-                        "startOffset": 14967,
-                        "endLine": 182,
+                        "startOffset": 11962,
+                        "endLine": 159,
                         "endColumn": 12,
-                        "endOffset": 15085
+                        "endOffset": 12140
                     }
                 }
             },
@@ -979,20 +1002,20 @@
                 "to": {
                     "startLine": 166,
                     "startColumn": 4,
-                    "startOffset": 12591,
+                    "startOffset": 12446,
                     "endLine": 167,
                     "endColumn": 12,
-                    "endOffset": 12709
+                    "endOffset": 12572
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 183,
+                        "startLine": 160,
                         "startColumn": 4,
-                        "startOffset": 15090,
-                        "endLine": 184,
+                        "startOffset": 12145,
+                        "endLine": 161,
                         "endColumn": 12,
-                        "endOffset": 15208
+                        "endOffset": 12271
                     }
                 }
             },
@@ -1000,41 +1023,58 @@
                 "to": {
                     "startLine": 168,
                     "startColumn": 4,
-                    "startOffset": 12714,
-                    "endLine": 169,
+                    "startOffset": 12577,
+                    "endLine": 170,
                     "endColumn": 12,
-                    "endOffset": 12822
+                    "endOffset": 12773
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 185,
+                        "startLine": 162,
                         "startColumn": 4,
-                        "startOffset": 15213,
-                        "endLine": 186,
+                        "startOffset": 12276,
+                        "endLine": 164,
                         "endColumn": 12,
-                        "endOffset": 15321
+                        "endOffset": 12472
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 170,
+                    "startLine": 171,
                     "startColumn": 4,
-                    "startOffset": 12827,
-                    "endLine": 172,
-                    "endColumn": 12,
-                    "endOffset": 13005
+                    "startOffset": 12778,
+                    "endColumn": 88,
+                    "endOffset": 12862
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 187,
+                        "startLine": 165,
                         "startColumn": 4,
-                        "startOffset": 15326,
-                        "endLine": 189,
-                        "endColumn": 12,
-                        "endOffset": 15504
+                        "startOffset": 12477,
+                        "endColumn": 88,
+                        "endOffset": 12561
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 172,
+                    "startColumn": 4,
+                    "startOffset": 12867,
+                    "endColumn": 110,
+                    "endOffset": 12973
+                },
+                "from": {
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 166,
+                        "startColumn": 4,
+                        "startOffset": 12566,
+                        "endColumn": 110,
+                        "endOffset": 12672
                     }
                 }
             },
@@ -1042,20 +1082,37 @@
                 "to": {
                     "startLine": 173,
                     "startColumn": 4,
-                    "startOffset": 13010,
-                    "endLine": 174,
-                    "endColumn": 12,
-                    "endOffset": 13136
+                    "startOffset": 12978,
+                    "endColumn": 126,
+                    "endOffset": 13100
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 190,
+                        "startLine": 167,
                         "startColumn": 4,
-                        "startOffset": 15509,
-                        "endLine": 191,
-                        "endColumn": 12,
-                        "endOffset": 15635
+                        "startOffset": 12677,
+                        "endColumn": 126,
+                        "endOffset": 12799
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 174,
+                    "startColumn": 4,
+                    "startOffset": 13105,
+                    "endColumn": 100,
+                    "endOffset": 13201
+                },
+                "from": {
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 168,
+                        "startColumn": 4,
+                        "startOffset": 12804,
+                        "endColumn": 100,
+                        "endOffset": 12900
                     }
                 }
             },
@@ -1063,20 +1120,56 @@
                 "to": {
                     "startLine": 175,
                     "startColumn": 4,
-                    "startOffset": 13141,
-                    "endLine": 177,
-                    "endColumn": 12,
-                    "endOffset": 13337
+                    "startOffset": 13206,
+                    "endColumn": 94,
+                    "endOffset": 13296
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 192,
+                        "startLine": 169,
                         "startColumn": 4,
-                        "startOffset": 15640,
-                        "endLine": 194,
-                        "endColumn": 12,
-                        "endOffset": 15836
+                        "startOffset": 12905,
+                        "endColumn": 94,
+                        "endOffset": 12995
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 176,
+                    "startColumn": 4,
+                    "startOffset": 13301,
+                    "endColumn": 122,
+                    "endOffset": 13419
+                },
+                "from": {
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 170,
+                        "startColumn": 4,
+                        "startOffset": 13000,
+                        "endColumn": 122,
+                        "endOffset": 13118
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 177,
+                    "startColumn": 4,
+                    "startOffset": 13424,
+                    "endColumn": 128,
+                    "endOffset": 13548
+                },
+                "from": {
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 171,
+                        "startColumn": 4,
+                        "startOffset": 13123,
+                        "endColumn": 128,
+                        "endOffset": 13247
                     }
                 }
             },
@@ -1084,18 +1177,18 @@
                 "to": {
                     "startLine": 178,
                     "startColumn": 4,
-                    "startOffset": 13342,
-                    "endColumn": 88,
-                    "endOffset": 13426
+                    "startOffset": 13553,
+                    "endColumn": 116,
+                    "endOffset": 13665
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 195,
+                        "startLine": 172,
                         "startColumn": 4,
-                        "startOffset": 15841,
-                        "endColumn": 88,
-                        "endOffset": 15925
+                        "startOffset": 13252,
+                        "endColumn": 116,
+                        "endOffset": 13364
                     }
                 }
             },
@@ -1103,56 +1196,20 @@
                 "to": {
                     "startLine": 179,
                     "startColumn": 4,
-                    "startOffset": 13431,
-                    "endColumn": 110,
-                    "endOffset": 13537
+                    "startOffset": 13670,
+                    "endLine": 181,
+                    "endColumn": 12,
+                    "endOffset": 13842
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 196,
+                        "startLine": 173,
                         "startColumn": 4,
-                        "startOffset": 15930,
-                        "endColumn": 110,
-                        "endOffset": 16036
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 180,
-                    "startColumn": 4,
-                    "startOffset": 13542,
-                    "endColumn": 126,
-                    "endOffset": 13664
-                },
-                "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 197,
-                        "startColumn": 4,
-                        "startOffset": 16041,
-                        "endColumn": 126,
-                        "endOffset": 16163
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 181,
-                    "startColumn": 4,
-                    "startOffset": 13669,
-                    "endColumn": 100,
-                    "endOffset": 13765
-                },
-                "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 198,
-                        "startColumn": 4,
-                        "startOffset": 16168,
-                        "endColumn": 100,
-                        "endOffset": 16264
+                        "startOffset": 13369,
+                        "endLine": 175,
+                        "endColumn": 12,
+                        "endOffset": 13541
                     }
                 }
             },
@@ -1160,18 +1217,18 @@
                 "to": {
                     "startLine": 182,
                     "startColumn": 4,
-                    "startOffset": 13770,
-                    "endColumn": 94,
-                    "endOffset": 13860
+                    "startOffset": 13847,
+                    "endColumn": 98,
+                    "endOffset": 13941
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 199,
+                        "startLine": 176,
                         "startColumn": 4,
-                        "startOffset": 16269,
-                        "endColumn": 94,
-                        "endOffset": 16359
+                        "startOffset": 13546,
+                        "endColumn": 98,
+                        "endOffset": 13640
                     }
                 }
             },
@@ -1179,37 +1236,20 @@
                 "to": {
                     "startLine": 183,
                     "startColumn": 4,
-                    "startOffset": 13865,
-                    "endColumn": 122,
-                    "endOffset": 13983
+                    "startOffset": 13946,
+                    "endLine": 184,
+                    "endColumn": 12,
+                    "endOffset": 14076
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 200,
+                        "startLine": 177,
                         "startColumn": 4,
-                        "startOffset": 16364,
-                        "endColumn": 122,
-                        "endOffset": 16482
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 184,
-                    "startColumn": 4,
-                    "startOffset": 13988,
-                    "endColumn": 128,
-                    "endOffset": 14112
-                },
-                "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 201,
-                        "startColumn": 4,
-                        "startOffset": 16487,
-                        "endColumn": 128,
-                        "endOffset": 16611
+                        "startOffset": 13645,
+                        "endLine": 178,
+                        "endColumn": 12,
+                        "endOffset": 13775
                     }
                 }
             },
@@ -1217,39 +1257,41 @@
                 "to": {
                     "startLine": 185,
                     "startColumn": 4,
-                    "startOffset": 14117,
-                    "endColumn": 116,
-                    "endOffset": 14229
+                    "startOffset": 14081,
+                    "endLine": 186,
+                    "endColumn": 12,
+                    "endOffset": 14219
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 202,
+                        "startLine": 179,
                         "startColumn": 4,
-                        "startOffset": 16616,
-                        "endColumn": 116,
-                        "endOffset": 16728
+                        "startOffset": 13780,
+                        "endLine": 180,
+                        "endColumn": 12,
+                        "endOffset": 13918
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 186,
+                    "startLine": 187,
                     "startColumn": 4,
-                    "startOffset": 14234,
+                    "startOffset": 14224,
                     "endLine": 188,
                     "endColumn": 12,
-                    "endOffset": 14406
+                    "endOffset": 14354
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 203,
+                        "startLine": 181,
                         "startColumn": 4,
-                        "startOffset": 16733,
-                        "endLine": 205,
+                        "startOffset": 13923,
+                        "endLine": 182,
                         "endColumn": 12,
-                        "endOffset": 16905
+                        "endOffset": 14053
                     }
                 }
             },
@@ -1257,102 +1299,81 @@
                 "to": {
                     "startLine": 189,
                     "startColumn": 4,
-                    "startOffset": 14411,
-                    "endColumn": 98,
-                    "endOffset": 14505
+                    "startOffset": 14359,
+                    "endLine": 190,
+                    "endColumn": 12,
+                    "endOffset": 14473
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 206,
+                        "startLine": 183,
                         "startColumn": 4,
-                        "startOffset": 16910,
-                        "endColumn": 98,
-                        "endOffset": 17004
+                        "startOffset": 14058,
+                        "endLine": 184,
+                        "endColumn": 12,
+                        "endOffset": 14172
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 190,
+                    "startLine": 191,
                     "startColumn": 4,
-                    "startOffset": 14510,
-                    "endLine": 191,
+                    "startOffset": 14478,
+                    "endLine": 194,
                     "endColumn": 12,
-                    "endOffset": 14640
+                    "endOffset": 14674
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 207,
+                        "startLine": 185,
                         "startColumn": 4,
-                        "startOffset": 17009,
-                        "endLine": 208,
+                        "startOffset": 14177,
+                        "endLine": 188,
                         "endColumn": 12,
-                        "endOffset": 17139
+                        "endOffset": 14373
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 192,
+                    "startLine": 195,
                     "startColumn": 4,
-                    "startOffset": 14645,
-                    "endLine": 193,
+                    "startOffset": 14679,
+                    "endLine": 196,
                     "endColumn": 12,
-                    "endOffset": 14783
+                    "endOffset": 14793
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 209,
+                        "startLine": 189,
                         "startColumn": 4,
-                        "startOffset": 17144,
-                        "endLine": 210,
+                        "startOffset": 14378,
+                        "endLine": 190,
                         "endColumn": 12,
-                        "endOffset": 17282
+                        "endOffset": 14492
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 194,
+                    "startLine": 197,
                     "startColumn": 4,
-                    "startOffset": 14788,
-                    "endLine": 195,
-                    "endColumn": 12,
-                    "endOffset": 14918
+                    "startOffset": 14798,
+                    "endColumn": 92,
+                    "endOffset": 14886
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 211,
+                        "startLine": 191,
                         "startColumn": 4,
-                        "startOffset": 17287,
-                        "endLine": 212,
-                        "endColumn": 12,
-                        "endOffset": 17417
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 196,
-                    "startColumn": 4,
-                    "startOffset": 14923,
-                    "endLine": 197,
-                    "endColumn": 12,
-                    "endOffset": 15037
-                },
-                "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 213,
-                        "startColumn": 4,
-                        "startOffset": 17422,
-                        "endLine": 214,
-                        "endColumn": 12,
-                        "endOffset": 17536
+                        "startOffset": 14497,
+                        "endColumn": 92,
+                        "endOffset": 14585
                     }
                 }
             },
@@ -1360,20 +1381,58 @@
                 "to": {
                     "startLine": 198,
                     "startColumn": 4,
-                    "startOffset": 15042,
-                    "endLine": 201,
-                    "endColumn": 12,
-                    "endOffset": 15238
+                    "startOffset": 14891,
+                    "endColumn": 110,
+                    "endOffset": 14997
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 215,
+                        "startLine": 192,
                         "startColumn": 4,
-                        "startOffset": 17541,
-                        "endLine": 218,
+                        "startOffset": 14590,
+                        "endColumn": 110,
+                        "endOffset": 14696
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 199,
+                    "startColumn": 4,
+                    "startOffset": 15002,
+                    "endColumn": 55,
+                    "endOffset": 15053
+                },
+                "from": {
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 193,
+                        "startColumn": 4,
+                        "startOffset": 14701,
+                        "endColumn": 55,
+                        "endOffset": 14752
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 200,
+                    "startColumn": 4,
+                    "startOffset": 15058,
+                    "endLine": 201,
+                    "endColumn": 12,
+                    "endOffset": 15160
+                },
+                "from": {
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 194,
+                        "startColumn": 4,
+                        "startOffset": 14757,
+                        "endLine": 195,
                         "endColumn": 12,
-                        "endOffset": 17737
+                        "endOffset": 14859
                     }
                 }
             },
@@ -1381,58 +1440,20 @@
                 "to": {
                     "startLine": 202,
                     "startColumn": 4,
-                    "startOffset": 15243,
-                    "endLine": 203,
+                    "startOffset": 15165,
+                    "endLine": 205,
                     "endColumn": 12,
-                    "endOffset": 15357
+                    "endOffset": 15355
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 219,
+                        "startLine": 196,
                         "startColumn": 4,
-                        "startOffset": 17742,
-                        "endLine": 220,
+                        "startOffset": 14864,
+                        "endLine": 199,
                         "endColumn": 12,
-                        "endOffset": 17856
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 204,
-                    "startColumn": 4,
-                    "startOffset": 15362,
-                    "endColumn": 92,
-                    "endOffset": 15450
-                },
-                "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 221,
-                        "startColumn": 4,
-                        "startOffset": 17861,
-                        "endColumn": 92,
-                        "endOffset": 17949
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 205,
-                    "startColumn": 4,
-                    "startOffset": 15455,
-                    "endColumn": 110,
-                    "endOffset": 15561
-                },
-                "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 222,
-                        "startColumn": 4,
-                        "startOffset": 17954,
-                        "endColumn": 110,
-                        "endOffset": 18060
+                        "endOffset": 15054
                     }
                 }
             },
@@ -1440,60 +1461,98 @@
                 "to": {
                     "startLine": 206,
                     "startColumn": 4,
-                    "startOffset": 15566,
-                    "endColumn": 55,
-                    "endOffset": 15617
+                    "startOffset": 15360,
+                    "endLine": 207,
+                    "endColumn": 12,
+                    "endOffset": 15466
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 223,
+                        "startLine": 200,
                         "startColumn": 4,
-                        "startOffset": 18065,
-                        "endColumn": 55,
-                        "endOffset": 18116
+                        "startOffset": 15059,
+                        "endLine": 201,
+                        "endColumn": 12,
+                        "endOffset": 15165
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 207,
+                    "startLine": 208,
                     "startColumn": 4,
-                    "startOffset": 15622,
-                    "endLine": 208,
+                    "startOffset": 15471,
+                    "endLine": 209,
                     "endColumn": 12,
-                    "endOffset": 15724
+                    "endOffset": 15599
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 224,
+                        "startLine": 202,
                         "startColumn": 4,
-                        "startOffset": 18121,
-                        "endLine": 225,
+                        "startOffset": 15170,
+                        "endLine": 203,
                         "endColumn": 12,
-                        "endOffset": 18223
+                        "endOffset": 15298
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 209,
+                    "startLine": 210,
                     "startColumn": 4,
-                    "startOffset": 15729,
-                    "endLine": 212,
-                    "endColumn": 12,
-                    "endOffset": 15919
+                    "startOffset": 15604,
+                    "endColumn": 94,
+                    "endOffset": 15694
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 226,
+                        "startLine": 204,
                         "startColumn": 4,
-                        "startOffset": 18228,
-                        "endLine": 229,
-                        "endColumn": 12,
-                        "endOffset": 18418
+                        "startOffset": 15303,
+                        "endColumn": 94,
+                        "endOffset": 15393
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 211,
+                    "startColumn": 4,
+                    "startOffset": 15699,
+                    "endColumn": 90,
+                    "endOffset": 15785
+                },
+                "from": {
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 205,
+                        "startColumn": 4,
+                        "startOffset": 15398,
+                        "endColumn": 90,
+                        "endOffset": 15484
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 212,
+                    "startColumn": 4,
+                    "startOffset": 15790,
+                    "endColumn": 90,
+                    "endOffset": 15876
+                },
+                "from": {
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 206,
+                        "startColumn": 4,
+                        "startOffset": 15489,
+                        "endColumn": 90,
+                        "endOffset": 15575
                     }
                 }
             },
@@ -1501,201 +1560,121 @@
                 "to": {
                     "startLine": 213,
                     "startColumn": 4,
-                    "startOffset": 15924,
-                    "endLine": 214,
-                    "endColumn": 12,
-                    "endOffset": 16030
+                    "startOffset": 15881,
+                    "endColumn": 116,
+                    "endOffset": 15993
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 207,
+                        "startColumn": 4,
+                        "startOffset": 15580,
+                        "endColumn": 116,
+                        "endOffset": 15692
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 214,
+                    "startColumn": 4,
+                    "startOffset": 15998,
+                    "endLine": 215,
+                    "endColumn": 12,
+                    "endOffset": 16132
+                },
+                "from": {
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 208,
+                        "startColumn": 4,
+                        "startOffset": 15697,
+                        "endLine": 209,
+                        "endColumn": 12,
+                        "endOffset": 15831
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 216,
+                    "startColumn": 4,
+                    "startOffset": 16137,
+                    "endLine": 225,
+                    "endColumn": 12,
+                    "endOffset": 16645
+                },
+                "from": {
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 210,
+                        "startColumn": 4,
+                        "startOffset": 15836,
+                        "endLine": 219,
+                        "endColumn": 12,
+                        "endOffset": 16344
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 226,
+                    "startColumn": 4,
+                    "startOffset": 16650,
+                    "endLine": 235,
+                    "endColumn": 12,
+                    "endOffset": 17170
+                },
+                "from": {
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 220,
+                        "startColumn": 4,
+                        "startOffset": 16349,
+                        "endLine": 229,
+                        "endColumn": 12,
+                        "endOffset": 16869
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 236,
+                    "startColumn": 4,
+                    "startOffset": 17175,
+                    "endLine": 245,
+                    "endColumn": 12,
+                    "endOffset": 17850
+                },
+                "from": {
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 230,
                         "startColumn": 4,
-                        "startOffset": 18423,
-                        "endLine": 231,
-                        "endColumn": 12,
-                        "endOffset": 18529
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 215,
-                    "startColumn": 4,
-                    "startOffset": 16035,
-                    "endLine": 216,
-                    "endColumn": 12,
-                    "endOffset": 16163
-                },
-                "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 232,
-                        "startColumn": 4,
-                        "startOffset": 18534,
-                        "endLine": 233,
-                        "endColumn": 12,
-                        "endOffset": 18662
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 217,
-                    "startColumn": 4,
-                    "startOffset": 16168,
-                    "endColumn": 94,
-                    "endOffset": 16258
-                },
-                "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 234,
-                        "startColumn": 4,
-                        "startOffset": 18667,
-                        "endColumn": 94,
-                        "endOffset": 18757
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 218,
-                    "startColumn": 4,
-                    "startOffset": 16263,
-                    "endColumn": 90,
-                    "endOffset": 16349
-                },
-                "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 235,
-                        "startColumn": 4,
-                        "startOffset": 18762,
-                        "endColumn": 90,
-                        "endOffset": 18848
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 219,
-                    "startColumn": 4,
-                    "startOffset": 16354,
-                    "endColumn": 90,
-                    "endOffset": 16440
-                },
-                "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 236,
-                        "startColumn": 4,
-                        "startOffset": 18853,
-                        "endColumn": 90,
-                        "endOffset": 18939
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 220,
-                    "startColumn": 4,
-                    "startOffset": 16445,
-                    "endColumn": 116,
-                    "endOffset": 16557
-                },
-                "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 237,
-                        "startColumn": 4,
-                        "startOffset": 18944,
-                        "endColumn": 116,
-                        "endOffset": 19056
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 221,
-                    "startColumn": 4,
-                    "startOffset": 16562,
-                    "endLine": 222,
-                    "endColumn": 12,
-                    "endOffset": 16696
-                },
-                "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 238,
-                        "startColumn": 4,
-                        "startOffset": 19061,
+                        "startOffset": 16874,
                         "endLine": 239,
                         "endColumn": 12,
-                        "endOffset": 19195
+                        "endOffset": 17549
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 223,
+                    "startLine": 246,
                     "startColumn": 4,
-                    "startOffset": 16701,
-                    "endLine": 229,
-                    "endColumn": 12,
-                    "endOffset": 17049
+                    "startOffset": 17855,
+                    "endColumn": 56,
+                    "endOffset": 17907
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 242,
+                        "startLine": 240,
                         "startColumn": 4,
-                        "startOffset": 19437,
-                        "endLine": 248,
-                        "endColumn": 12,
-                        "endOffset": 19785
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 230,
-                    "startColumn": 4,
-                    "startOffset": 17054,
-                    "endLine": 236,
-                    "endColumn": 12,
-                    "endOffset": 17414
-                },
-                "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 249,
-                        "startColumn": 4,
-                        "startOffset": 19790,
-                        "endLine": 255,
-                        "endColumn": 12,
-                        "endOffset": 20150
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 237,
-                    "startColumn": 4,
-                    "startOffset": 17419,
-                    "endLine": 246,
-                    "endColumn": 12,
-                    "endOffset": 18094
-                },
-                "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 256,
-                        "startColumn": 4,
-                        "startOffset": 20155,
-                        "endLine": 265,
-                        "endColumn": 12,
-                        "endOffset": 20830
+                        "startOffset": 17554,
+                        "endColumn": 56,
+                        "endOffset": 17606
                     }
                 }
             },
@@ -1703,37 +1682,18 @@
                 "to": {
                     "startLine": 247,
                     "startColumn": 4,
-                    "startOffset": 18099,
-                    "endColumn": 56,
-                    "endOffset": 18151
-                },
-                "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 266,
-                        "startColumn": 4,
-                        "startOffset": 20835,
-                        "endColumn": 56,
-                        "endOffset": 20887
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 248,
-                    "startColumn": 4,
-                    "startOffset": 18156,
+                    "startOffset": 17912,
                     "endColumn": 57,
-                    "endOffset": 18209
+                    "endOffset": 17965
                 },
                 "from": {
-                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 267,
+                        "startLine": 241,
                         "startColumn": 4,
-                        "startOffset": 20892,
+                        "startOffset": 17611,
                         "endColumn": 57,
-                        "endOffset": 20945
+                        "endOffset": 17664
                     }
                 }
             }

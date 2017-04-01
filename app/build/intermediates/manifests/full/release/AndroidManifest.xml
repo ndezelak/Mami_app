@@ -36,7 +36,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.nejc.mamiapp.activities.InputActivity" />
-        <activity android:name="com.nejc.mamiapp.activities.OverviewActivity" />
+        <activity android:name="com.nejc.mamiapp.activities.StatisticsActivity" />
     </application>
 
 </manifest>

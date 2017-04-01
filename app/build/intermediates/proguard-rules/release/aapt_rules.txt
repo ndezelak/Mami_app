@@ -8,8 +8,8 @@
 # view sw600dp-v13\res/layout-sw600dp-v13/design_layout_snackbar.xml #generated:18
 -keep class android.support.design.widget.Snackbar$SnackbarLayout { <init>(...); }
 
-# view large-v4\res/layout-large-v4/activity_week.xml #generated:14
-# view res/layout/activity_week.xml #generated:13
+# view large-v4\res/layout-large-v4/input_activity.xml #generated:14
+# view res/layout/input_activity.xml #generated:13
 -keep class android.support.v4.view.ViewPager { <init>(...); }
 
 # view res/layout/abc_alert_dialog_material.xml #generated:75
@@ -77,9 +77,9 @@
 -keep class com.nejc.mamiapp.activities.MainActivity { <init>(...); }
 
 # view AndroidManifest.xml #generated:39
--keep class com.nejc.mamiapp.activities.OverviewActivity { <init>(...); }
+-keep class com.nejc.mamiapp.activities.StatisticsActivity { <init>(...); }
 
-# view large-v4\res/layout-large-v4/grid_item.xml #generated:7
-# view res/layout/grid_item.xml #generated:7
--keep class com.nejc.mamiapp.fragments_and_adapters.CustomImageView { <init>(...); }
+# view large-v4\res/layout-large-v4/input_activity_fragment_chooser_grid_item.xml #generated:7
+# view res/layout/input_activity_fragment_chooser_grid_item.xml #generated:7
+-keep class com.nejc.mamiapp.fragments.CustomImageView { <init>(...); }
 

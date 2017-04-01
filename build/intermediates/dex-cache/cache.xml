@@ -3,66 +3,84 @@
 
     <item
         is-multidex="false"
-        jar="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\libs\internal_impl-23.1.0.jar"
+        jar="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
-        <dex dex="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.0_14e523398f88fdf5c586208740c5fbacaa73cd5d.jar" />
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.4.0_9a33fba29b1fbedd12510af6f28a5b6c883da443.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\classes.jar"
+        jar="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\23.4.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
-        <dex dex="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.1.0_bc4d1060b0fd260dc3b2632ce508a57ae08d932b.jar" />
+        sha1="7c4c1fcc34aca536e3389c31527fb3c941b80266">
+        <dex dex="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\pre-dexed\debug\com.android.support-gridlayout-v7-23.4.0_6894338f8e8dcca4c14bd46de77034636e31734c.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\23.1.0\jars\classes.jar"
+        jar="C:\Users\Nejc\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="3713f30726299231eddfb206043ebb72a2519b6f">
-        <dex dex="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\pre-dexed\debug\com.android.support-gridlayout-v7-23.1.0_3cbef2cca3203be82c2c78b977547e68682df26a.jar" />
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_34b074a34544a1eaeb61b8b26209b240f4d9db07.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\jars\classes.jar"
+        jar="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
-        <dex dex="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.1.0_b0331a5309497188567de970110fc882c60dab1f.jar" />
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_bad685d38d69b3ed70d55abde9165bed70dcff27.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\exploded-aar\com.android.support\design\23.1.0\jars\classes.jar"
+        jar="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="19026d31f5d3ae868db81319671a642be5fbba08">
-        <dex dex="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.1.0_ee7b6124c8ce539e62cdf4dd6e0676a8293a8b92.jar" />
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_780a0f546efd85f1ec9b47eced34d7f7aaacb995.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.0\jars\classes.jar"
+        jar="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
-        <dex dex="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.1.0_7691f9d97818f5eca52b7cc8864ef55a8f3406c5.jar" />
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_3d668b0a06f45806c91299e42c4ed17693dca671.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Nejc\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.0\support-annotations-23.1.0.jar"
+        jar="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
-        <dex dex="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.0_8839266f65adae1ce2cdcdc036ec875f73722f49.jar" />
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.4.0_911720197e6e42e3c7337fdba504941a6b7e0772.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_08416331b4aaa5cacfaaa7cedb7996c7a2251a8a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_6d87ddc3e979bd4d052ff8df084b1dad1709aae2.jar" />
     </item>
 
 </items>

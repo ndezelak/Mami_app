@@ -13,7 +13,6 @@ package com.nejc.mamiapp.activities;
  * the ViewPager fragment and the Chooser Fragment goes through an interface
  */
 
-import android.app.PendingIntent;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.support.v4.view.ViewPager;
@@ -23,8 +22,8 @@ import android.widget.Toast;
 
 import com.nejc.mamiapp.BuildConfig;
 import com.nejc.mamiapp.R;
-import com.nejc.mamiapp.fragments_and_adapters.ChooserFragment;
-import com.nejc.mamiapp.fragments_and_adapters.ViewPagerAdapter;
+import com.nejc.mamiapp.fragments.inputActivity.ChooserFragment;
+import com.nejc.mamiapp.adapters.inputActivity.ViewPagerAdapter;
 import com.nejc.mamiapp.helpers.DataBaseHelper;
 import com.nejc.mamiapp.helpers.InterFragmentInterface;
 
@@ -65,7 +64,7 @@ public class InputActivity extends AppCompatActivity implements InterFragmentInt
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // Set activity layout
-        setContentView(R.layout.activity_week);
+        setContentView(R.layout.input_activity);
 
         // Reference to application context and SharedPreferences
         context = getApplicationContext();

@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home_screen);
+        setContentView(R.layout.main_activity);
         int i = 0;
 
         // Create a new fresh instance of the DataBaseHelper class
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         monthButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), OverviewActivity.class);
+                Intent intent = new Intent(getApplicationContext(), StatisticsActivity.class);
                 startActivity(intent);
             }
         });
