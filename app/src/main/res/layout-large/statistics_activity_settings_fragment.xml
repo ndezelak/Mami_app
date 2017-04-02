@@ -3,9 +3,16 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    android:layout_margin="80dp">
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </ListView>
+   >
+<ListView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/settings_listview"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    android:divider="@android:color/transparent"
+    android:dividerHeight="20dp"
+    >
+</ListView>
 </LinearLayout>

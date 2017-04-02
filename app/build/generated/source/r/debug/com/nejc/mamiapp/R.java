@@ -2556,6 +2556,7 @@ containing a value of this type.
         public static final int design_menu_item_text=0x7f0e0073;
         public static final int design_navigation_view=0x7f0e0072;
         public static final int disableHome=0x7f0e000e;
+        public static final int editText=0x7f0e009d;
         public static final int edit_query=0x7f0e0060;
         public static final int end=0x7f0e0021;
         public static final int end_padder=0x7f0e0094;
@@ -2626,6 +2627,7 @@ containing a value of this type.
         public static final int select_dialog_listview=0x7f0e006c;
         public static final int settingsButton=0x7f0e0099;
         public static final int settingsFrame=0x7f0e009a;
+        public static final int settings_listview=0x7f0e009b;
         public static final int shortcut=0x7f0e0057;
         public static final int showCustom=0x7f0e0011;
         public static final int showHome=0x7f0e0012;
@@ -2645,6 +2647,7 @@ containing a value of this type.
         public static final int text=0x7f0e0092;
         public static final int text2=0x7f0e0090;
         public static final int textSpacerNoButtons=0x7f0e0051;
+        public static final int textView=0x7f0e009c;
         public static final int time=0x7f0e008e;
         public static final int title=0x7f0e0047;
         public static final int title_frame=0x7f0e0095;
@@ -2729,10 +2732,12 @@ containing a value of this type.
         public static final int statistics_activity=0x7f040036;
         public static final int statistics_activity_month_fragment=0x7f040037;
         public static final int statistics_activity_settings_fragment=0x7f040038;
-        public static final int statistics_activity_year_fragment=0x7f040039;
-        public static final int statistics_activity_year_fragment_grid_element=0x7f04003a;
-        public static final int statistics_activity_year_fragment_popup_fragment=0x7f04003b;
-        public static final int support_simple_spinner_dropdown_item=0x7f04003c;
+        public static final int statistics_activity_settings_fragment_listview_row_1=0x7f040039;
+        public static final int statistics_activity_settings_fragment_listview_row_2=0x7f04003a;
+        public static final int statistics_activity_year_fragment=0x7f04003b;
+        public static final int statistics_activity_year_fragment_grid_element=0x7f04003c;
+        public static final int statistics_activity_year_fragment_popup_fragment=0x7f04003d;
+        public static final int support_simple_spinner_dropdown_item=0x7f04003e;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;

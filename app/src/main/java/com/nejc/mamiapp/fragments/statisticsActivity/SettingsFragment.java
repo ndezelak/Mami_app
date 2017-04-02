@@ -7,8 +7,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
 import com.nejc.mamiapp.R;
+import com.nejc.mamiapp.adapters.statisticsActivity.SettingsListViewAdapter;
 
 /**
  * @author Nejc
@@ -48,6 +50,8 @@ public class SettingsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         //super.onCreateView(inflater, container, savedInstanceState);
         View v = (View) inflater.inflate(R.layout.statistics_activity_settings_fragment,container, false);
+        ListView settingsListView = (ListView)v.findViewById(R.id.settings_listview);
+        settingsListView.setAdapter(new SettingsListViewAdapter(getContext()));
         return v;
     }
 

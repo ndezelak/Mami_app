@@ -28,6 +28,10 @@
         "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\src\\main\\res\\layout-large\\content_overview.xml"
     },
     {
+        "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-large-v4\\statistics_activity_settings_fragment_listview_row_1.xml",
+        "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\src\\main\\res\\layout-large\\statistics_activity_settings_fragment_listview_row_1.xml"
+    },
+    {
         "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-large-v4\\activity_week.xml",
         "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\src\\main\\res\\layout-large\\activity_week.xml"
     },
@@ -62,6 +66,10 @@
     {
         "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-large-v4\\input_activity.xml",
         "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\src\\main\\res\\layout-large\\input_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-large-v4\\statistics_activity_settings_fragment_listview_row_2.xml",
+        "source": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\src\\main\\res\\layout-large\\statistics_activity_settings_fragment_listview_row_2.xml"
     },
     {
         "merged": "C:\\Users\\Nejc\\Software Development\\GitHub Projects\\MamiApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-large-v4\\activity_home_screen.xml",
