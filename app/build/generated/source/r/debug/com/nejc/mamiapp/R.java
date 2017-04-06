@@ -25,7 +25,8 @@ public final class R {
         public static final int design_fab_out=0x7f05000d;
         public static final int design_snackbar_in=0x7f05000e;
         public static final int design_snackbar_out=0x7f05000f;
-        public static final int show=0x7f050010;
+        public static final int hide=0x7f050010;
+        public static final int show=0x7f050011;
     }
     public static final class animator {
         public static final int show=0x7f060000;
@@ -2590,7 +2591,7 @@ containing a value of this type.
         public static final int media_actions=0x7f0e008b;
         public static final int middle=0x7f0e0036;
         public static final int mini=0x7f0e0030;
-        public static final int month_statistics_button=0x7f0e0096;
+        public static final int month_statistics_button=0x7f0e0097;
         public static final int month_title=0x7f0e007c;
         public static final int multiply=0x7f0e0027;
         public static final int navigation_header_container=0x7f0e0071;
@@ -2607,7 +2608,7 @@ containing a value of this type.
         public static final int progress_horizontal=0x7f0e0007;
         public static final int radio=0x7f0e0058;
         public static final int right=0x7f0e0024;
-        public static final int root_layout=0x7f0e0098;
+        public static final int root_layout=0x7f0e0095;
         public static final int screen=0x7f0e0028;
         public static final int scroll=0x7f0e0018;
         public static final int scrollIndicatorDown=0x7f0e0052;
@@ -2650,7 +2651,7 @@ containing a value of this type.
         public static final int textView=0x7f0e009c;
         public static final int time=0x7f0e008e;
         public static final int title=0x7f0e0047;
-        public static final int title_frame=0x7f0e0095;
+        public static final int title_frame=0x7f0e0096;
         public static final int title_template=0x7f0e004c;
         public static final int top=0x7f0e0026;
         public static final int topPanel=0x7f0e004b;
@@ -2662,7 +2663,7 @@ containing a value of this type.
         public static final int withText=0x7f0e003b;
         public static final int work_type=0x7f0e0083;
         public static final int wrap_content=0x7f0e001a;
-        public static final int year_statistics_button=0x7f0e0097;
+        public static final int year_statistics_button=0x7f0e0098;
         public static final int year_title=0x7f0e007d;
     }
     public static final class integer {

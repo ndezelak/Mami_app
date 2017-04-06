@@ -21,6 +21,7 @@ import android.widget.LinearLayout;
 
 import com.nejc.mamiapp.R;
 import com.nejc.mamiapp.adapters.statisticsActivity.GraphViewPagerAdapter;
+import com.nejc.mamiapp.fragments.statisticsActivity.GraphFragment;
 import com.nejc.mamiapp.fragments.statisticsActivity.SettingsFragment;
 
 import java.util.HashMap;
@@ -48,7 +49,7 @@ public class StatisticsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.statistics_activity);
-        settingsVisibility =true;
+        settingsVisibility =false;
         // GUI element initialization
         ViewPager graph = (ViewPager) findViewById(R.id.pager);
         graph.setOffscreenPageLimit(1);
@@ -69,22 +70,24 @@ public class StatisticsActivity extends AppCompatActivity {
                 }
             }
         });
-        // Add fragment to activity
+        // Save reference to Settings Fragment
         mSettingsFragment = new SettingsFragment();
-        getSupportFragmentManager().beginTransaction().add(R.id.settingsFrame,mSettingsFragment).commit();
-
+        // Reference to Background Layout in order to perform bluring
         rootView = (LinearLayout) findViewById(R.id.root_layout);
-        // Settingsbutton setOnClickListener
+        // Settingsbutton
         ImageButton settingsButton = (ImageButton) findViewById(R.id.settingsButton);
         settingsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FrameLayout settingsFrame = (FrameLayout) findViewById(R.id.settingsFrame);
                 if(settingsVisibility){
-                    rootView.bringToFront();
+                    rootView.animate().alpha((float)1.0).setDuration(1000);
                     settingsVisibility=false;
+                    getSupportFragmentManager().beginTransaction().setCustomAnimations(R.anim.show,R.anim.hide)
+                            .remove(mSettingsFragment).commit();
                 }else{
-                    settingsFrame.bringToFront();
+                    getSupportFragmentManager().beginTransaction() .setCustomAnimations(R.anim.show,R.anim.hide)
+                            .add(R.id.settingsFrame,mSettingsFragment,null).commit();
+                    rootView.animate().alpha((float)0.5).setDuration(1000);
                     settingsVisibility=true;
                 }
             }
