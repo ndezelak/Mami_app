@@ -1,5 +1,6 @@
 package com.nejc.mamiapp.fragments.statisticsActivity;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.preference.PreferenceFragment;
 import android.support.annotation.Nullable;
@@ -7,17 +8,18 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListAdapter;
 import android.widget.ListView;
 
 import com.nejc.mamiapp.R;
+import com.nejc.mamiapp.adapters.statisticsActivity.GraphViewPagerAdapter;
 import com.nejc.mamiapp.adapters.statisticsActivity.SettingsListViewAdapter;
 
 /**
  * @author Nejc
  * <p>
  * Description:
- *          Special implementation of the Fragment class specialized for
- *          displaying and handling preferences.
+ *          Settings UI as a fragment.
  */
 
 
@@ -31,8 +33,15 @@ import com.nejc.mamiapp.adapters.statisticsActivity.SettingsListViewAdapter;
  /***********************************************/
 
 public class SettingsFragment extends Fragment {
+    private Activity parent;
     public SettingsFragment() {
         super();
+    }
+    public void setParent(Activity parent){
+        this.parent = parent;
+    }
+    public Activity getParent(){
+        return this.parent;
     }
 
     @Override
@@ -51,7 +60,8 @@ public class SettingsFragment extends Fragment {
         //super.onCreateView(inflater, container, savedInstanceState);
         View v = (View) inflater.inflate(R.layout.statistics_activity_settings_fragment,container, false);
         ListView settingsListView = (ListView)v.findViewById(R.id.settings_listview);
-        settingsListView.setAdapter(new SettingsListViewAdapter(getContext()));
+        //GraphViewPagerAdapter adapter = new GraphViewPagerAdapter(getFragmentManager());
+        settingsListView.setAdapter(new SettingsListViewAdapter(getContext(),getParent()));
         return v;
     }
 

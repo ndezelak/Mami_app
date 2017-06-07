@@ -43,7 +43,6 @@ import java.util.GregorianCalendar;
 
 // Note that this class is implementing a custom interfragment interface
 public class InputActivity extends AppCompatActivity implements InterFragmentInterface {
-
     //PendingIntent reNotify;
     Context context;
     SharedPreferences pref;
@@ -53,7 +52,6 @@ public class InputActivity extends AppCompatActivity implements InterFragmentInt
     ViewPager pager;
     ViewPagerAdapter adapter;
     ChooserFragment fragmentToAdd;
-
 
     int selectedDay;
     int selectedMonth;

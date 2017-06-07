@@ -111,7 +111,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/settingsFrame"
-        android:layout_margin="40dp"
+        android:layout_margin="20dp"
         android:layout_above="@+id/root_layout">
     </FrameLayout>
 

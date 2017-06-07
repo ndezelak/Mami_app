@@ -12,24 +12,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\23.4.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="7c4c1fcc34aca536e3389c31527fb3c941b80266">
-        <dex dex="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\pre-dexed\debug\com.android.support-gridlayout-v7-23.4.0_6894338f8e8dcca4c14bd46de77034636e31734c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Nejc\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_34b074a34544a1eaeb61b8b26209b240f4d9db07.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -45,6 +27,33 @@
         revision="23.0.1"
         sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
         <dex dex="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_780a0f546efd85f1ec9b47eced34d7f7aaacb995.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="7c4c1fcc34aca536e3389c31527fb3c941b80266">
+        <dex dex="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\pre-dexed\debug\com.android.support-gridlayout-v7-23.4.0_6894338f8e8dcca4c14bd46de77034636e31734c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="39ae02ce40c3ac828abbf780ce0ff5d7a28b7d6a">
+        <dex dex="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-23.0.1_b5363b653f4b5f818651f315a2fff04b199d6501.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Nejc\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Users\Nejc\Software Development\GitHub Projects\MamiApp\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_34b074a34544a1eaeb61b8b26209b240f4d9db07.jar" />
     </item>
     <item
         is-multidex="false"

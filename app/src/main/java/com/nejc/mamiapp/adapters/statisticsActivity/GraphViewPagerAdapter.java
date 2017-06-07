@@ -3,9 +3,8 @@ package com.nejc.mamiapp.adapters.statisticsActivity;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
-import android.widget.BaseAdapter;
 
-import com.nejc.mamiapp.fragments.statisticsActivity.GraphFragment;
+import com.nejc.mamiapp.fragments.statisticsActivity.MonthlyStatisticsFragment;
 
 /**
  * @author Nejc
@@ -33,7 +32,7 @@ public class GraphViewPagerAdapter extends FragmentStatePagerAdapter {
     // This method is called whenever a new Fragment has to be created
     @Override
     public Fragment getItem(int position) {
-        return new GraphFragment();
+        return new MonthlyStatisticsFragment();
     }
 
     @Override
